@@ -39,23 +39,11 @@ export function HeroSection() {
       />
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-        {/* Badge */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          <span className="inline-flex items-center gap-2 px-4 py-1.5 text-xs font-semibold tracking-wider uppercase text-electric bg-electric/10 border border-electric/20 rounded-full mb-6">
-            <span className="h-1.5 w-1.5 rounded-full bg-electric animate-pulse" />
-            The Complete Tattoo Shop Platform
-          </span>
-        </motion.div>
-
         {/* Headline */}
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.1 }}
+          transition={{ duration: 0.6 }}
           className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.15] max-w-5xl mx-auto"
         >
           <span className="whitespace-nowrap">Run Your Studio. Fill Your Chair.</span>
@@ -67,8 +55,8 @@ export function HeroSection() {
         <motion.p
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.2 }}
-          className="mt-6 text-lg sm:text-xl text-ink-200 max-w-2xl mx-auto leading-relaxed"
+          transition={{ duration: 0.6, delay: 0.1 }}
+          className="mt-5 text-lg sm:text-xl text-ink-200 max-w-2xl mx-auto leading-relaxed"
         >
           Clients browse your designs, pick a size, choose body placement, and pay
           a deposit — all without a single DM or phone call. Custom pieces get a
@@ -82,8 +70,8 @@ export function HeroSection() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.3 }}
-          className="mt-6 flex flex-wrap justify-center gap-2"
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="mt-5 flex flex-wrap justify-center gap-2"
         >
           {[
             "Online Booking",
@@ -108,8 +96,8 @@ export function HeroSection() {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.4 }}
-          className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4"
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           <Link
             href="/contact"
