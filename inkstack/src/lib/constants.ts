@@ -45,51 +45,6 @@ export const STATS = [
   { value: "200", label: "SEO Articles Included", suffix: "+" },
 ] as const;
 
-export const TESTIMONIALS = [
-  {
-    name: "Marcus Rivera",
-    role: "Owner, Iron & Ink Tattoo",
-    location: "Austin, TX",
-    quote: "We went from 15 bookings a month to over 60 in 90 days. The satellite sites are pulling in clients from three cities we never even marketed to before.",
-    rating: 5,
-  },
-  {
-    name: "Sarah Chen",
-    role: "Owner, Lotus Studio",
-    location: "Portland, OR",
-    quote: "I was spending $2K/month on Google Ads with garbage results. Tattoo Shop Accelerator replaced all of that. Now we rank #1 for every tattoo search in our area — organically.",
-    rating: 5,
-  },
-  {
-    name: "Derek 'Ghost' Williams",
-    role: "Owner, Ghost Line Tattoo",
-    location: "Atlanta, GA",
-    quote: "The referral program alone paid for the entire setup. We've got barber shops, gyms, and smoke shops sending us clients every week. It's like having a street team.",
-    rating: 5,
-  },
-  {
-    name: "Jessica Morales",
-    role: "Studio Manager, Sacred Art Collective",
-    location: "Denver, CO",
-    quote: "The receptionist dashboard changed everything. No more double bookings, no more missed deposits. Our front desk runs itself now.",
-    rating: 5,
-  },
-  {
-    name: "Tommy Nguyen",
-    role: "Artist & Owner, True North Tattoo",
-    location: "Seattle, WA",
-    quote: "I'm an artist, not a web developer. Tattoo Shop Accelerator gave me a site that actually looks as good as my work. Clients constantly tell us we have the best website they've seen.",
-    rating: 5,
-  },
-  {
-    name: "Kai Thompson",
-    role: "Owner, Electric Soul Tattoo",
-    location: "Miami, FL",
-    quote: "200 articles across 5 sites — my competitors can't even come close. We own the first two pages of Google for tattoos in south Florida. Game over.",
-    rating: 5,
-  },
-] as const;
-
 export const FAQ_ITEMS = [
   {
     question: "How long does it take to get everything set up?",
