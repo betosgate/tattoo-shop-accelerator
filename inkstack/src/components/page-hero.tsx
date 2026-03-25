@@ -44,9 +44,6 @@ export function PageHero({
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <span className="inline-block px-3 py-1 text-xs font-semibold tracking-wider uppercase text-electric bg-electric/10 border border-electric/20 rounded-full mb-4">
-            {badge}
-          </span>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white">
             {title}
             {titleHighlight && (

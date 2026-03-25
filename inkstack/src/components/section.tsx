@@ -29,11 +29,6 @@ export function SectionHeader({
 }) {
   return (
     <div className={`max-w-3xl ${centered ? "mx-auto text-center" : ""} mb-6`}>
-      {badge && (
-        <span className="inline-block px-3 py-1 text-xs font-semibold tracking-wider uppercase text-electric bg-electric/10 border border-electric/20 rounded-full mb-4">
-          {badge}
-        </span>
-      )}
       <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white">
         {title}
       </h2>
