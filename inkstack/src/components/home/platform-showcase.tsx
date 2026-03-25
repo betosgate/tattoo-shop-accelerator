@@ -3,164 +3,164 @@
 import { Section, SectionHeader } from "@/components/section";
 import { FadeUp } from "@/components/motion";
 import { motion } from "framer-motion";
-import { Monitor, Smartphone, Globe, BarChart } from "lucide-react";
+import { ShoppingCart, Palette, BarChart, Shield } from "lucide-react";
 import { useState } from "react";
 
 const tabs = [
   {
-    id: "booking",
-    label: "Booking System",
-    icon: Monitor,
+    id: "shop",
+    label: "Ready-to-Book Designs",
+    icon: ShoppingCart,
     content: {
-      title: "Two paths to getting booked",
-      description: "Clients can browse your designs and quick-book, or submit a custom consultation request. Either way, deposits are collected upfront via Stripe.",
+      title: "Clients buy tattoos like products — no time wasted",
+      description: "This is the game-changer. Template designs are pre-priced with set hours. Clients browse your catalog, pick a size, choose body placement, select their artist, pay a deposit, and book their time slot — all in under 3 minutes. No DMs. No phone calls. No back-and-forth. The tattoo is already designed, hours are predetermined, pricing is locked in. They just buy it and show up.",
       mockup: (
-        <div className="space-y-4">
-          <div className="flex gap-3">
-            <div className="flex-1 glass-card rounded-lg p-4 border-electric/30 border">
-              <div className="w-8 h-8 rounded bg-electric/20 mb-2" />
-              <p className="text-sm font-medium text-white">Quick Book</p>
-              <p className="text-xs text-ink-400 mt-1">Browse designs, pick size & placement, pay deposit</p>
-            </div>
-            <div className="flex-1 glass-card rounded-lg p-4">
-              <div className="w-8 h-8 rounded bg-neon-pink/20 mb-2" />
-              <p className="text-sm font-medium text-white">Custom Request</p>
-              <p className="text-xs text-ink-400 mt-1">Describe your vision, upload references, book consult</p>
-            </div>
+        <div className="space-y-3">
+          <div className="grid grid-cols-3 gap-2">
+            {["Traditional Rose", "Geometric Wolf", "Fine Line Bird"].map((d) => (
+              <div key={d} className="rounded-lg bg-ink-800 p-2 text-center border border-white/5 hover:border-electric/20 transition-colors cursor-pointer">
+                <div className="aspect-square rounded bg-gradient-to-br from-ink-700 to-ink-600 mb-1" />
+                <p className="text-[9px] text-white font-medium">{d}</p>
+                <p className="text-[8px] text-electric">2 hrs — $200</p>
+              </div>
+            ))}
           </div>
-          <div className="glass-card rounded-lg p-4">
-            <div className="flex items-center justify-between mb-3">
-              <p className="text-sm font-medium text-white">Select Body Placement</p>
-              <span className="text-xs text-electric">44 areas</span>
-            </div>
-            <div className="grid grid-cols-4 gap-2">
-              {["Upper Arm", "Forearm", "Back", "Chest", "Ribs", "Thigh", "Calf", "Neck"].map((area) => (
-                <div key={area} className="text-center py-2 px-1 rounded bg-ink-800 text-[10px] text-ink-300 hover:bg-electric/10 hover:text-electric cursor-pointer transition-colors">
-                  {area}
-                </div>
-              ))}
-            </div>
+          <div className="flex gap-2">
+            {["S", "M", "L", "XL"].map((s) => (
+              <div key={s} className={`flex-1 py-1.5 rounded text-center text-[10px] font-medium border ${s === "M" ? "border-electric text-electric bg-electric/10" : "border-white/10 text-ink-300"}`}>{s}</div>
+            ))}
           </div>
+          <div className="grid grid-cols-4 gap-1">
+            {["Upper Arm", "Forearm", "Calf", "Thigh"].map((a) => (
+              <div key={a} className={`text-center py-1 rounded text-[8px] ${a === "Forearm" ? "bg-electric/10 text-electric border border-electric/20" : "bg-ink-800 text-ink-300 border border-white/5"}`}>{a}</div>
+            ))}
+          </div>
+          <div className="flex justify-between items-center text-xs bg-ink-800 rounded-lg p-2 border border-white/5">
+            <div>
+              <span className="text-white font-medium">Medium — Forearm</span>
+              <span className="text-ink-400 ml-2">2 hrs</span>
+            </div>
+            <span className="text-electric font-bold">$40 deposit</span>
+          </div>
+        </div>
+      ),
+    },
+  },
+  {
+    id: "custom",
+    label: "Custom Tattoo Flow",
+    icon: Palette,
+    content: {
+      title: "Custom pieces get the full consultation workflow",
+      description: "For original designs, clients book a $25 consultation. Artist creates the plan — how many sessions, hours per session, which stages (linework, shading, color). Admin generates a custom booking link with the exact sessions and pricing. Client receives the link, picks their dates, pays deposits per session. Everything tracked from start to finish.",
+      mockup: (
+        <div className="space-y-2">
+          {[
+            { session: "1. Linework", hours: "4 hrs", deposit: "$80" },
+            { session: "2. Shading", hours: "4 hrs", deposit: "$80" },
+            { session: "3. Color & Detail", hours: "3 hrs", deposit: "$60" },
+          ].map((s) => (
+            <div key={s.session} className="flex items-center justify-between text-[10px] bg-ink-800 rounded-lg px-3 py-2 border border-white/5">
+              <span className="text-white font-medium">{s.session}</span>
+              <span className="text-ink-300">{s.hours}</span>
+              <span className="text-electric">{s.deposit}</span>
+            </div>
+          ))}
+          <div className="flex justify-between text-xs pt-1 border-t border-white/5">
+            <span className="text-white font-semibold">Total: 11 hrs — $1,100</span>
+            <span className="text-electric font-semibold">$220 deposits</span>
+          </div>
+          <div className="text-[9px] text-ink-400 text-center">Custom link sent to client → they pick dates → deposits collected automatically</div>
         </div>
       ),
     },
   },
   {
     id: "dashboard",
-    label: "Dashboard",
+    label: "Admin Dashboards",
     icon: BarChart,
     content: {
-      title: "Three dashboards, three roles",
-      description: "Admin gets full control. Receptionist gets today's schedule and phone booking wizard. Artists get their personal schedule and session tracking.",
+      title: "Three dashboards — admin, receptionist, artist",
+      description: "Admin gets full control: bookings, clients, payments, artists, calendar, referral partners. Receptionist gets today's schedule, check-in/no-show buttons, phone booking wizard, client lookup. Artists get their personal schedule, session notes, project progress tracking (linework → shading → color → touch-up), and client profiles.",
       mockup: (
-        <div className="space-y-3">
-          <div className="flex gap-2 mb-4">
-            {["Admin", "Receptionist", "Artist"].map((role) => (
-              <span key={role} className={`text-xs px-3 py-1 rounded-full ${role === "Admin" ? "bg-electric/20 text-electric" : "bg-ink-800 text-ink-400"}`}>
-                {role}
-              </span>
+        <div className="space-y-2">
+          <div className="flex gap-1.5 mb-2">
+            {["Admin", "Receptionist", "Artist"].map((r) => (
+              <span key={r} className={`text-[9px] px-2 py-1 rounded-full ${r === "Admin" ? "bg-electric/20 text-electric" : "bg-ink-800 text-ink-400"}`}>{r}</span>
             ))}
           </div>
-          <div className="glass-card rounded-lg p-4">
-            <p className="text-xs text-ink-400 mb-2">Client: Alex Martinez</p>
-            <div className="space-y-2">
-              <div>
-                <div className="flex justify-between text-xs mb-1">
-                  <span className="text-ink-300">Full Sleeve — Linework</span>
-                  <span className="text-neon-green">Complete</span>
+          <div className="grid grid-cols-3 gap-2">
+            {[
+              { label: "Today", value: "6 sessions" },
+              { label: "Revenue", value: "$2,840" },
+              { label: "Pending", value: "3 deposits" },
+            ].map((s) => (
+              <div key={s.label} className="bg-ink-800 rounded p-2 border border-white/5 text-center">
+                <p className="text-[8px] text-ink-400">{s.label}</p>
+                <p className="text-xs text-white font-bold">{s.value}</p>
+              </div>
+            ))}
+          </div>
+          <div className="bg-ink-800 rounded p-2 border border-white/5">
+            <p className="text-[8px] text-ink-400 mb-1">Active Projects</p>
+            {[
+              { name: "Alex M. — Sleeve", stage: "Shading", pct: 65 },
+              { name: "Casey L. — Back", stage: "Linework", pct: 30 },
+            ].map((p) => (
+              <div key={p.name} className="py-1">
+                <div className="flex justify-between text-[9px]">
+                  <span className="text-ink-200">{p.name}</span>
+                  <span className="text-electric">{p.stage}</span>
                 </div>
-                <div className="h-1.5 bg-ink-800 rounded-full overflow-hidden">
-                  <div className="h-full w-full bg-neon-green rounded-full" />
+                <div className="h-1 bg-ink-700 rounded-full mt-0.5">
+                  <div className="h-full bg-electric rounded-full" style={{ width: `${p.pct}%` }} />
                 </div>
               </div>
-              <div>
-                <div className="flex justify-between text-xs mb-1">
-                  <span className="text-ink-300">Full Sleeve — Shading</span>
-                  <span className="text-electric">75%</span>
-                </div>
-                <div className="h-1.5 bg-ink-800 rounded-full overflow-hidden">
-                  <div className="h-full w-3/4 bg-electric rounded-full" />
-                </div>
-              </div>
-              <div>
-                <div className="flex justify-between text-xs mb-1">
-                  <span className="text-ink-300">Full Sleeve — Color</span>
-                  <span className="text-ink-500">Upcoming</span>
-                </div>
-                <div className="h-1.5 bg-ink-800 rounded-full overflow-hidden">
-                  <div className="h-full w-0 bg-ink-600 rounded-full" />
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       ),
     },
   },
   {
-    id: "seo",
-    label: "SEO Sites",
-    icon: Globe,
+    id: "crm",
+    label: "CRM & Consent",
+    icon: Shield,
     content: {
-      title: "5 satellites dominating local search",
-      description: "Each satellite site has its own brand, targets a different city, and contains 40+ long-form articles. That's 200+ pieces of content working for you 24/7.",
+      title: "Every client, every session, every form — tracked",
+      description: "Full client profiles with contact info, tattoo history, session-by-session tracking, payment records, notes (consultation, design, medical, follow-up), consent form status, and tags (VIP, Regular, Walk-in). Digital consent forms screen 17 medical conditions with digital signature. No paper. No clipboards. Everything on file before they sit in the chair.",
       mockup: (
-        <div className="space-y-3">
-          {[
-            { name: "TattoosAustin.com", city: "Austin", articles: 42, color: "electric" },
-            { name: "RoundRockTattooGuide.com", city: "Round Rock", articles: 40, color: "neon-green" },
-            { name: "TattoosCedarPark.com", city: "Cedar Park", articles: 41, color: "neon-pink" },
-            { name: "GeorgetownInk.com", city: "Georgetown", articles: 38, color: "electric" },
-            { name: "SanMarcosTattoos.com", city: "San Marcos", articles: 40, color: "neon-green" },
-          ].map((site) => (
-            <div key={site.name} className="glass-card rounded-lg p-3 flex items-center gap-3">
-              <div className={`w-2 h-2 rounded-full bg-${site.color}`} />
-              <div className="flex-1 min-w-0">
-                <p className="text-sm font-medium text-white truncate">{site.name}</p>
-                <p className="text-xs text-ink-400">Targeting: {site.city}</p>
-              </div>
-              <span className="text-xs text-ink-300">{site.articles} articles</span>
+        <div className="space-y-2">
+          <div className="flex items-center gap-2 bg-ink-800 rounded-lg p-2 border border-white/5">
+            <div className="w-8 h-8 rounded-full bg-gradient-to-br from-electric/30 to-neon-pink/30 flex items-center justify-center shrink-0">
+              <span className="text-[9px] font-bold text-white">AM</span>
             </div>
-          ))}
-        </div>
-      ),
-    },
-  },
-  {
-    id: "mobile",
-    label: "Mobile",
-    icon: Smartphone,
-    content: {
-      title: "Perfect on every screen",
-      description: "70% of tattoo searches happen on mobile. Every page, form, and feature is built mobile-first so you never lose a potential client.",
-      mockup: (
-        <div className="flex justify-center gap-4">
-          <div className="w-40 rounded-2xl border border-white/10 overflow-hidden">
-            <div className="bg-ink-800 px-3 py-2 flex justify-center">
-              <div className="w-12 h-1 bg-ink-600 rounded-full" />
-            </div>
-            <div className="bg-ink-900 p-3 space-y-2">
-              <div className="h-20 rounded bg-gradient-to-br from-electric/20 to-neon-pink/20" />
-              <div className="h-2 bg-ink-700 rounded w-3/4" />
-              <div className="h-2 bg-ink-700 rounded w-1/2" />
-              <div className="h-8 bg-electric/20 rounded flex items-center justify-center">
-                <span className="text-[8px] text-electric">Book Now</span>
+            <div>
+              <p className="text-[10px] text-white font-medium">Alex Martinez</p>
+              <div className="flex gap-1">
+                <span className="text-[7px] px-1 bg-electric/10 text-electric rounded">VIP</span>
+                <span className="text-[7px] px-1 bg-neon-green/10 text-neon-green rounded">Consent ✓</span>
               </div>
             </div>
+            <span className="text-[9px] text-ink-400 ml-auto">$2,840 LTV</span>
           </div>
-          <div className="w-40 rounded-2xl border border-white/10 overflow-hidden">
-            <div className="bg-ink-800 px-3 py-2 flex justify-center">
-              <div className="w-12 h-1 bg-ink-600 rounded-full" />
-            </div>
-            <div className="bg-ink-900 p-3 space-y-2">
-              <div className="grid grid-cols-2 gap-1">
-                {[1, 2, 3, 4].map((i) => (
-                  <div key={i} className="aspect-square rounded bg-ink-700" />
-                ))}
+          <div className="bg-ink-800 rounded-lg p-2 border border-white/5">
+            <p className="text-[8px] text-ink-400 mb-1">Session History</p>
+            {[
+              { s: "Linework", status: "✓", color: "text-neon-green" },
+              { s: "Shading", status: "75%", color: "text-electric" },
+              { s: "Color", status: "—", color: "text-ink-500" },
+            ].map((x) => (
+              <div key={x.s} className="flex justify-between text-[9px] py-0.5">
+                <span className="text-ink-200">{x.s}</span>
+                <span className={x.color}>{x.status}</span>
               </div>
-              <div className="h-2 bg-ink-700 rounded w-2/3" />
-              <div className="h-2 bg-ink-700 rounded w-1/3" />
-            </div>
+            ))}
+          </div>
+          <div className="grid grid-cols-3 gap-1">
+            {["Deposits: $480", "Paid: $1,960", "Owed: $400"].map((v) => (
+              <div key={v} className="text-center text-[8px] py-1 bg-ink-800 rounded border border-white/5 text-ink-300">{v}</div>
+            ))}
           </div>
         </div>
       ),
@@ -169,16 +169,16 @@ const tabs = [
 ];
 
 export function PlatformShowcase() {
-  const [activeTab, setActiveTab] = useState("booking");
+  const [activeTab, setActiveTab] = useState("shop");
   const active = tabs.find((t) => t.id === activeTab)!;
 
   return (
     <Section>
       <FadeUp>
         <SectionHeader
-          badge="Platform"
-          title="See What You're Getting"
-          description="A real platform built for real tattoo shops. Not a template. Not a plugin. A complete digital ecosystem."
+          badge="See It In Action"
+          title="A Platform That Actually Runs Your Shop"
+          description="Not a contact form with a calendar. A real system that handles design browsing, booking, payments, scheduling, client management, and multi-session tracking."
         />
       </FadeUp>
 
@@ -190,7 +190,7 @@ export function PlatformShowcase() {
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`flex items-center gap-2 px-6 py-4 text-sm font-medium whitespace-nowrap transition-colors relative ${
+                className={`flex items-center gap-2 px-5 py-3 text-sm font-medium whitespace-nowrap transition-colors relative ${
                   activeTab === tab.id
                     ? "text-electric"
                     : "text-ink-400 hover:text-white"
@@ -209,17 +209,19 @@ export function PlatformShowcase() {
           </div>
 
           {/* Content */}
-          <div className="p-6 sm:p-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+          <div className="p-5 sm:p-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
               <div>
-                <h3 className="text-xl font-bold text-white">
+                <h3 className="text-lg font-bold text-white mb-2">
                   {active.content.title}
                 </h3>
-                <p className="mt-3 text-sm text-ink-300 leading-relaxed">
+                <p className="text-sm text-ink-300 leading-relaxed">
                   {active.content.description}
                 </p>
               </div>
-              <div>{active.content.mockup}</div>
+              <div className="bg-ink-900 rounded-lg p-3 border border-white/5">
+                {active.content.mockup}
+              </div>
             </div>
           </div>
         </div>

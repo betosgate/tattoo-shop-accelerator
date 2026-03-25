@@ -20,9 +20,9 @@ import {
 const features = [
   {
     icon: Calendar,
-    title: "Real Booking System",
+    title: "Ready-to-Book Design Shop",
     description:
-      "Two paths: clients browse designs and book instantly, or submit custom consultation requests. Not a contact form — a real booking flow with date/time selection.",
+      "Clients browse your template designs, pick a size, choose body placement, select an artist, pay a deposit, and book a time — all without talking to anyone. Hours and pricing are predetermined. Zero time wasted on templates.",
   },
   {
     icon: CreditCard,

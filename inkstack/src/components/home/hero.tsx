@@ -67,12 +67,13 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="mt-6 text-lg sm:text-xl text-ink-300 max-w-2xl mx-auto leading-relaxed"
+          className="mt-6 text-lg sm:text-xl text-ink-200 max-w-2xl mx-auto leading-relaxed"
         >
-          Online booking with Stripe deposits. A CRM that tracks every session
-          from linework to touch-up. Three dashboards for your admin, receptionist,
-          and artists. Digital consent forms. A referral program. And an SEO engine
-          that puts you on page 1 of Google. All done for you.
+          Clients browse your designs, pick a size, choose body placement, and pay
+          a deposit — all without a single DM or phone call. Custom pieces get a
+          consultation-first flow with multi-session tracking. Three dashboards
+          keep your admin, receptionist, and artists in sync. And 6 SEO-optimized
+          websites bring clients to your door 24/7. All done for you.
         </motion.p>
 
         {/* Feature pills */}
