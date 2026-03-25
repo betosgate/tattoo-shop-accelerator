@@ -6,9 +6,12 @@ import { BeforeAfter } from "@/components/seo/before-after";
 import { CTASection } from "@/components/home/cta";
 
 export const metadata: Metadata = {
-  title: "SEO Results",
+  title: "SEO for Tattoo Shops — 5 Satellite Sites & 200+ Articles",
   description:
-    "5 satellite websites, 200+ articles, and total local search domination. See how InkStack's SEO strategy works.",
+    "Dominate every local tattoo search with 5 satellite websites targeting surrounding cities, 200+ long-form SEO articles, and 11 on-site landing pages. See the strategy that puts you on page 1 of Google.",
+  alternates: {
+    canonical: "https://www.tattooshopaccelerator.com/seo",
+  },
 };
 
 export default function SEOPage() {

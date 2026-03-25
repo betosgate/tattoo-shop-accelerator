@@ -10,9 +10,12 @@ import { SEOCompact } from "@/components/demo/seo-compact";
 import { CTASection } from "@/components/home/cta";
 
 export const metadata: Metadata = {
-  title: "See It Live — Product Walkthrough",
+  title: "Live Product Demo — Booking, Dashboard, CRM & SEO Walkthrough",
   description:
-    "Walk through every feature of the Tattoo Shop Accelerator platform. See the booking system, admin dashboard, CRM, SEO satellites, and more.",
+    "Walk through every feature of the Tattoo Shop Accelerator platform live. See the booking system, 3 admin dashboards, tattoo CRM with session tracking, digital consent forms, referral program, and SEO satellites.",
+  alternates: {
+    canonical: "https://www.tattooshopaccelerator.com/demo",
+  },
 };
 
 export default function DemoPage() {
