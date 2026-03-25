@@ -56,9 +56,9 @@ export function HeroSection() {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="mt-6 text-lg sm:text-xl text-ink-300 max-w-2xl mx-auto leading-relaxed"
         >
-          Your competitors are getting the clients that should be yours.
-          Tattoo Shop Accelerator gives you 6 websites, 200+ SEO articles, and a complete
-          booking platform — all done for you.
+          Your competitors have 1 website. You&apos;ll have 6. Plus 200+ SEO articles,
+          a real booking system with deposits, and a CRM that knows the difference
+          between linework and a touch-up. All done for you.
         </motion.p>
 
         {/* CTAs */}

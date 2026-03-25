@@ -9,7 +9,7 @@ const problems = [
     icon: TrendingDown,
     title: "Invisible Online",
     description:
-      "Your studio does incredible work, but nobody can find you on Google. Meanwhile, mediocre shops with better websites are stealing your clients.",
+      "85% of first-time clients Google you before they book. If they can't find you, they find your competitor. That mediocre shop down the street with a better website? They're getting your clients.",
   },
   {
     icon: Clock,
@@ -19,9 +19,9 @@ const problems = [
   },
   {
     icon: DollarSign,
-    title: "Losing Money to No-Shows",
+    title: "Losing $15K-$30K to No-Shows",
     description:
-      "Without a proper deposit system, clients ghost appointments. That's your time and money walking out the door.",
+      "Without a proper deposit system, clients ghost appointments. The average studio loses $15,000-$30,000 per year to no-shows. That's your chair sitting empty while bills pile up.",
   },
   {
     icon: AlertTriangle,
