@@ -11,9 +11,9 @@ import { FAQSection } from "@/components/home/faq";
 import { CTASection } from "@/components/home/cta";
 
 export const metadata: Metadata = {
-  title: "Tattoo Shop Accelerator — Websites, SEO & Booking for Tattoo Studios",
+  title: "Tattoo Shop Accelerator — Booking, CRM, Payments & SEO Platform for Tattoo Studios",
   description:
-    "Get 6 professional websites, 200+ SEO articles, online booking with Stripe, a tattoo-specific CRM, digital consent forms, and a referral program — all built for your tattoo studio. Done for you in 3 weeks.",
+    "The complete digital platform for tattoo studios: online booking with Stripe deposits, tattoo CRM with session tracking, 3 role-based dashboards, digital consent forms, referral programs, portfolio galleries, and 6 SEO-optimized websites with 200+ articles. Done for you in 3 weeks.",
   alternates: {
     canonical: "https://www.tattooshopaccelerator.com",
   },

@@ -13,82 +13,82 @@ import {
   Globe,
   Handshake,
   Smartphone,
-  FileText,
   Palette,
+  ClipboardCheck,
 } from "lucide-react";
 
 const features = [
   {
     icon: Calendar,
-    title: "Smart Booking System",
+    title: "Real Booking System",
     description:
-      "Two booking paths: browse & quick-book, or custom consultation requests. Deposits collected automatically.",
+      "Two paths: clients browse designs and book instantly, or submit custom consultation requests. Not a contact form — a real booking flow with date/time selection.",
   },
   {
     icon: CreditCard,
-    title: "Stripe Payments",
+    title: "Stripe Deposits & Payments",
     description:
-      "Professional deposit collection ($20/hr) and consultation fees ($25). No more Venmo or Cash App.",
+      "Collect $20/hr deposits upfront via Stripe. Consultations are $25 flat. Remaining balance due at session. No more Venmo, Cash App, or 'I'll pay later.'",
   },
   {
-    icon: Search,
-    title: "SEO Domination",
+    icon: Palette,
+    title: "Shopping Cart with 44 Body Areas",
     description:
-      "5 satellite websites with 200+ articles targeting every tattoo search in your surrounding cities.",
+      "Clients pick their design, choose a size (S/M/L/XL), select exact body placement, and pricing adjusts automatically. Premium surcharges for sensitive areas built in.",
+  },
+  {
+    icon: BarChart3,
+    title: "3 Role-Based Dashboards",
+    description:
+      "Admin gets full control. Receptionist gets today's schedule, phone booking wizard, and check-in tools. Artists get their personal schedule and session tracking.",
   },
   {
     icon: Users,
     title: "Tattoo-Specific CRM",
     description:
-      "Track clients from consultation to touch-up. Session notes, progress tracking, payment history — all in one place.",
-  },
-  {
-    icon: Image,
-    title: "Portfolio Gallery",
-    description:
-      "Lightbox gallery supporting images and video. Show your work the way it deserves to be seen.",
+      "Track every client from consultation to touch-up. Session progress bars (linework → shading → color), payment history, notes, tags (VIP, Regular, Walk-in), and consent status.",
   },
   {
     icon: Shield,
     title: "Digital Consent Forms",
     description:
-      "HIPAA-aware health questionnaires with 17 medical conditions, allergies, medications, and digital signatures.",
+      "Full health questionnaire — 17 medical conditions, allergies, medications, emergency contacts, and digital signature. Legally compliant. No more paper clipboards.",
   },
   {
-    icon: BarChart3,
-    title: "Admin Dashboard",
+    icon: Handshake,
+    title: "Referral Partner Program",
     description:
-      "Three role-based dashboards: Admin, Receptionist, and Artist. Each gets exactly what they need.",
+      "Barber shops, gyms, and local businesses get referral codes. Customers get 5% off, partners earn 5% commission. QR code materials, monthly payouts, partner dashboard.",
+  },
+  {
+    icon: Image,
+    title: "Portfolio Gallery",
+    description:
+      "Lightbox gallery with image and video support. Filter by style. Each artist gets their own section. Show your work the way it deserves to be seen.",
+  },
+  {
+    icon: ClipboardCheck,
+    title: "Custom Booking Links",
+    description:
+      "After a consultation, admin creates a personalized booking link with the exact session plan (linework, shading, color). Client picks dates and pays deposits via the link.",
+  },
+  {
+    icon: Smartphone,
+    title: "Mobile-First Everything",
+    description:
+      "70% of tattoo searches happen on mobile. Every page, form, dashboard, and booking flow is built mobile-first. Your clients book from their phone in under 2 minutes.",
   },
   {
     icon: Globe,
     title: "6 Websites, Not 1",
     description:
-      "Your main site plus 5 SEO satellites, each with unique branding, targeting different surrounding cities.",
+      "Your main site plus 5 SEO satellite sites, each with unique branding, targeting a different surrounding city. 200+ long-form articles driving traffic to your booking system.",
   },
   {
-    icon: Handshake,
-    title: "Referral Program",
+    icon: Search,
+    title: "200+ SEO Articles",
     description:
-      "Turn barber shops, gyms, and local businesses into your marketing army. 5% commission, automated tracking.",
-  },
-  {
-    icon: Smartphone,
-    title: "Mobile-First Design",
-    description:
-      "Every page, every form, every feature — built mobile-first. Because that's where your clients are.",
-  },
-  {
-    icon: FileText,
-    title: "Legal & Compliance",
-    description:
-      "Privacy policy, terms of service, refund policy — all included. Plus aftercare instructions and FAQ pages.",
-  },
-  {
-    icon: Palette,
-    title: "44 Body Areas Mapped",
-    description:
-      "Clients pick exact placement with size-specific pricing. Premium surcharges for sensitive areas built in.",
+      "Each article is 1,500-2,500 words targeting local search terms — tattoo styles, placement guides, aftercare, pricing. Every article funnels readers to your booking page.",
   },
 ];
 
@@ -97,23 +97,23 @@ export function FeaturesSection() {
     <Section>
       <FadeUp>
         <SectionHeader
-          badge="Features"
-          title="Everything Your Studio Needs. Nothing It Doesn't."
-          description="Built from the ground up for tattoo shops — not adapted from some generic SaaS template."
+          badge="The Platform"
+          title="Everything Your Studio Needs to Run & Grow"
+          description="Not a website builder. Not a booking widget. A complete digital platform built from the ground up for how tattoo shops actually work."
         />
       </FadeUp>
 
-      <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {features.map((feature) => (
           <StaggerItem key={feature.title}>
-            <div className="glass-card rounded-xl p-6 h-full transition-all duration-300 group">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-electric/10 border border-electric/20 group-hover:bg-electric/20 transition-colors mb-4">
+            <div className="glass-card rounded-xl p-5 h-full transition-all duration-300 group">
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-electric/10 border border-electric/20 group-hover:bg-electric/20 transition-colors mb-3">
                 <feature.icon className="h-5 w-5 text-electric" />
               </div>
-              <h3 className="text-base font-semibold text-white">
+              <h3 className="text-sm font-semibold text-white">
                 {feature.title}
               </h3>
-              <p className="mt-2 text-sm text-ink-400 leading-relaxed">
+              <p className="mt-1.5 text-xs text-ink-400 leading-relaxed">
                 {feature.description}
               </p>
             </div>

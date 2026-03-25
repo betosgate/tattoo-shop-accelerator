@@ -39,10 +39,10 @@ export const PLATFORM_FEATURES = [
 ] as const;
 
 export const STATS = [
-  { value: "6", label: "Websites Deployed", suffix: "" },
-  { value: "200", label: "SEO Articles Written", suffix: "+" },
+  { value: "3", label: "Role-Based Dashboards", suffix: "" },
   { value: "44", label: "Body Areas Mapped", suffix: "" },
-  { value: "5", label: "Cities Dominated", suffix: "" },
+  { value: "6", label: "Websites Deployed", suffix: "" },
+  { value: "200", label: "SEO Articles Included", suffix: "+" },
 ] as const;
 
 export const TESTIMONIALS = [

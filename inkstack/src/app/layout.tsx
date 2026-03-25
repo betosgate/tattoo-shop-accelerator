@@ -19,11 +19,11 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.tattooshopaccelerator.com"),
   title: {
-    default: "Tattoo Shop Accelerator — Websites, SEO & Booking for Tattoo Studios",
+    default: "Tattoo Shop Accelerator — The Complete Digital Platform for Tattoo Studios",
     template: "%s | Tattoo Shop Accelerator",
   },
   description:
-    "Get 6 websites, 200+ SEO articles, online booking with Stripe payments, a tattoo-specific CRM, and a referral program — all done for you. Dominate local search and fill your chair.",
+    "The done-for-you platform that runs your tattoo studio: online booking, Stripe payments, client CRM with session tracking, 3 admin dashboards, digital consent forms, referral programs, portfolio galleries, and 6 SEO-optimized websites with 200+ articles.",
   keywords: [
     "tattoo shop website",
     "tattoo studio website builder",
@@ -60,9 +60,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://www.tattooshopaccelerator.com",
     siteName: "Tattoo Shop Accelerator",
-    title: "Tattoo Shop Accelerator — 6 Websites, 200+ SEO Articles, Full Booking Platform",
+    title: "Tattoo Shop Accelerator — Run Your Studio. Fill Your Chair.",
     description:
-      "The done-for-you digital platform for tattoo studios. Online booking, Stripe payments, tattoo CRM, 5 SEO satellite sites, and 200+ articles. Built by a tattoo shop owner.",
+      "Online booking, Stripe payments, tattoo CRM with session tracking, 3 dashboards, digital consent forms, referral programs, and 6 SEO websites with 200+ articles. Built by a tattoo shop owner.",
     images: [
       {
         url: "/og-image.png",
@@ -74,9 +74,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tattoo Shop Accelerator — 6 Websites, 200+ SEO Articles, Full Booking Platform",
+    title: "Tattoo Shop Accelerator — Run Your Studio. Fill Your Chair.",
     description:
-      "The done-for-you digital platform for tattoo studios. Built by a tattoo shop owner who gets it.",
+      "The complete digital platform for tattoo studios — booking, payments, CRM, dashboards, consent forms, referrals, and SEO. Built by a tattoo shop owner.",
   },
   alternates: {
     canonical: "https://www.tattooshopaccelerator.com",
