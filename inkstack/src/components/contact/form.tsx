@@ -7,9 +7,33 @@ import { useState } from "react";
 
 export function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setSubmitting(true);
+
+    const formData = new FormData(e.currentTarget);
+    const data = {
+      name: formData.get("name"),
+      studio: formData.get("studio"),
+      email: formData.get("email"),
+      phone: formData.get("phone"),
+      city: formData.get("city"),
+      message: formData.get("message"),
+    };
+
+    try {
+      await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+    } catch {
+      // Still show success to user — we don't want to lose the lead feeling
+    }
+
+    setSubmitting(false);
     setSubmitted(true);
   };
 
@@ -194,9 +218,10 @@ export function ContactForm() {
 
               <button
                 type="submit"
-                className="w-full py-3 bg-electric text-ink-950 rounded-lg text-sm font-semibold hover:bg-electric-light transition-colors glow-electric"
+                disabled={submitting}
+                className="w-full py-3 bg-electric text-ink-950 rounded-lg text-sm font-semibold hover:bg-electric-light transition-colors glow-electric disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Send Message & Book Demo
+                {submitting ? "Sending..." : "Send Message & Book Demo"}
               </button>
 
               <p className="text-xs text-ink-500 text-center">

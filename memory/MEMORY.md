@@ -1,2 +1,3 @@
-- [Project Overview](project_overview.md) — InkStack: SaaS marketing site selling tattoo studio digital platforms to US shop owners
-- [User Profile](user_profile.md) — User building tattoo SaaS business, wants autonomous decisions, save often
+- [Project Overview](project_overview.md) — Tattoo Shop Accelerator: SaaS marketing site for tattoo shops, all 7 pages built, needs deploy
+- [User Profile](user_profile.md) — Beto Paredes: tattoo shop owner + tech entrepreneur, autonomous decisions, save often
+- [Feedback](feedback_no_blog.md) — No blog on the marketing site, user explicitly said no
