@@ -58,8 +58,9 @@ export function HeroSection() {
           transition={{ duration: 0.7, delay: 0.1 }}
           className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1] max-w-5xl mx-auto"
         >
-          Run Your Studio.{" "}
-          <span className="gradient-text">Fill Your Chair.</span>
+          Run Your Studio. Fill Your Chair.
+          <br />
+          <span className="gradient-text">The Ultimate Tattoo Shop Platform.</span>
         </motion.h1>
 
         {/* Subheadline */}
@@ -73,7 +74,8 @@ export function HeroSection() {
           a deposit — all without a single DM or phone call. Custom pieces get a
           consultation-first flow with multi-session tracking. Three dashboards
           keep your admin, receptionist, and artists in sync. And 6 SEO-optimized
-          websites bring clients to your door 24/7. All done for you.
+          websites bring clients to your door 24/7.{" "}
+          <span className="whitespace-nowrap">All done for you.</span>
         </motion.p>
 
         {/* Feature pills */}
