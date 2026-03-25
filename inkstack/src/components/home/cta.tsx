@@ -1,14 +1,28 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight, Zap } from "lucide-react";
+import { IMAGES } from "@/lib/images";
 
 export function CTASection() {
   return (
     <section className="relative py-32 overflow-hidden">
-      {/* Background effects */}
+      {/* Background tattoo image */}
       <div className="absolute inset-0">
+        <Image
+          src={IMAGES.tattooedPerson2}
+          alt=""
+          fill
+          className="object-cover"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-ink-950/90" />
+      </div>
+
+      {/* Glow effects */}
+      <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-electric/10 rounded-full blur-[120px]" />
       </div>
 

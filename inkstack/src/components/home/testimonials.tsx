@@ -25,7 +25,7 @@ export function TestimonialsSection() {
                 &ldquo;{testimonial.quote}&rdquo;
               </p>
               <div className="mt-6 pt-4 border-t border-white/5">
-                <div className="flex gap-0.5 mb-2">
+                <div className="flex gap-0.5 mb-3">
                   {Array.from({ length: testimonial.rating }).map((_, i) => (
                     <Star
                       key={i}
@@ -33,11 +33,20 @@ export function TestimonialsSection() {
                     />
                   ))}
                 </div>
-                <p className="text-sm font-semibold text-white">
-                  {testimonial.name}
-                </p>
-                <p className="text-xs text-ink-400">{testimonial.role}</p>
-                <p className="text-xs text-ink-500">{testimonial.location}</p>
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-electric/30 to-neon-pink/30 flex items-center justify-center shrink-0">
+                    <span className="text-xs font-bold text-white">
+                      {testimonial.name.split(" ").map(n => n[0]).join("")}
+                    </span>
+                  </div>
+                  <div>
+                    <p className="text-sm font-semibold text-white">
+                      {testimonial.name}
+                    </p>
+                    <p className="text-xs text-ink-400">{testimonial.role}</p>
+                    <p className="text-xs text-ink-500">{testimonial.location}</p>
+                  </div>
+                </div>
               </div>
             </div>
           </StaggerItem>

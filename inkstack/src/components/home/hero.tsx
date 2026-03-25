@@ -1,17 +1,32 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight, Play } from "lucide-react";
+import { IMAGES } from "@/lib/images";
 
 export function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
-      {/* Background gradient effects */}
+      {/* Background tattoo image */}
       <div className="absolute inset-0">
-        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-electric/5 rounded-full blur-[120px]" />
+        <Image
+          src={IMAGES.heroArtistWorking}
+          alt="Tattoo artist working in studio"
+          fill
+          className="object-cover"
+          priority
+          sizes="100vw"
+        />
+        {/* Dark overlay for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-ink-950/80 via-ink-950/70 to-ink-950/95" />
+      </div>
+
+      {/* Gradient glow effects on top of image */}
+      <div className="absolute inset-0">
+        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-electric/8 rounded-full blur-[120px]" />
         <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-neon-pink/5 rounded-full blur-[100px]" />
-        <div className="absolute top-1/3 right-0 w-[300px] h-[300px] bg-electric/3 rounded-full blur-[80px]" />
       </div>
 
       {/* Grid pattern overlay */}
