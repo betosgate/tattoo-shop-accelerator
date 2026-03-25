@@ -11,81 +11,31 @@ export const NAV_LINKS = [
   { href: "/about", label: "About" },
 ] as const;
 
-export const PRICING_TIERS = [
-  {
-    name: "Starter",
-    subtitle: "Main website only",
-    setupFee: 2497,
-    monthlyFee: 249,
-    features: [
-      "Full tattoo studio website",
-      "Online booking system",
-      "Shopping cart with size & placement",
-      "Stripe deposit collection",
-      "Digital consent forms",
-      "Portfolio gallery (images + video)",
-      "Admin dashboard",
-      "Aftercare & FAQ pages",
-      "Mobile-responsive design",
-      "SSL & hosting included",
-    ],
-    notIncluded: [
-      "SEO satellite websites",
-      "200+ SEO articles",
-      "Referral partner program",
-      "Full CRM with multi-artist",
-      "Priority support",
-    ],
-    popular: false,
-    cta: "Get Started",
-  },
-  {
-    name: "Growth",
-    subtitle: "Main website + 3 SEO sites",
-    setupFee: 3997,
-    monthlyFee: 349,
-    features: [
-      "Everything in Starter",
-      "3 SEO satellite websites",
-      "120+ targeted SEO articles",
-      "3 surrounding cities targeted",
-      "Referral partner program",
-      "Partner dashboard & tracking",
-      "QR code marketing materials",
-      "11 on-site SEO landing pages",
-      "Receptionist dashboard",
-      "Monthly SEO reporting",
-    ],
-    notIncluded: [
-      "5 satellite websites (only 3)",
-      "200+ articles (only 120+)",
-      "Full CRM with multi-artist",
-      "Priority support",
-    ],
-    popular: true,
-    cta: "Start Growing",
-  },
-  {
-    name: "Domination",
-    subtitle: "Main website + 5 SEO sites",
-    setupFee: 4997,
-    monthlyFee: 449,
-    features: [
-      "Everything in Growth",
-      "5 SEO satellite websites",
-      "200+ targeted SEO articles",
-      "5 surrounding cities targeted",
-      "Full CRM with multi-artist support",
-      "Artist personal dashboards",
-      "Session tracking (linework → color)",
-      "Client tags & history",
-      "Priority support & onboarding",
-      "Dedicated account manager",
-    ],
-    notIncluded: [],
-    popular: false,
-    cta: "Dominate Your Market",
-  },
+export const PLATFORM_PRICE = 5000;
+export const MONTHLY_HOSTING = 249;
+export const PAYMENT_PLAN_MONTHS = 4;
+export const PAYMENT_PLAN_MONTHLY = 1250;
+export const UPFRONT_DISCOUNT = 0.10;
+
+export const PLATFORM_FEATURES = [
+  "Full tattoo studio website",
+  "5 SEO satellite websites (200+ articles)",
+  "Online booking system (browse & custom paths)",
+  "Shopping cart with 44 body areas & size pricing",
+  "Stripe deposit & payment collection",
+  "3 role-based dashboards (Admin, Receptionist, Artist)",
+  "Tattoo-specific CRM with session tracking",
+  "Digital consent forms (17 medical conditions)",
+  "Portfolio gallery with lightbox (images + video)",
+  "Referral partner program with commission tracking",
+  "11 on-site SEO landing pages",
+  "QR code marketing materials for partners",
+  "Aftercare instructions & FAQ pages",
+  "Legal pages (Privacy, Terms, Refund Policy)",
+  "Mobile-first responsive design",
+  "SSL certificates & hosting included",
+  "Staff training documentation",
+  "Dedicated onboarding & setup",
 ] as const;
 
 export const STATS = [
@@ -151,7 +101,7 @@ export const FAQ_ITEMS = [
   },
   {
     question: "What if I already have a website?",
-    answer: "We'll migrate your existing content, portfolio, and SEO value to your new Tattoo Shop Accelerator platform. Most shops see improved search rankings within the first month after switching, because our tech stack is built for speed and SEO from the ground up.",
+    answer: "We'll migrate your existing content, portfolio, and SEO value to your new platform. Most shops see improved search rankings within the first month after switching, because our tech stack is built for speed and SEO from the ground up.",
   },
   {
     question: "How are the 200+ SEO articles created?",

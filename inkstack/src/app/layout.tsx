@@ -109,44 +109,15 @@ export default function RootLayout({
                 name: "Beto Paredes",
                 url: "https://www.betoparedes.com",
               },
-              offers: [
-                {
-                  "@type": "Offer",
-                  name: "Starter",
-                  price: "249",
-                  priceCurrency: "USD",
-                  priceSpecification: {
-                    "@type": "UnitPriceSpecification",
-                    price: "249",
-                    priceCurrency: "USD",
-                    unitText: "MONTH",
-                  },
-                },
-                {
-                  "@type": "Offer",
-                  name: "Growth",
-                  price: "349",
-                  priceCurrency: "USD",
-                  priceSpecification: {
-                    "@type": "UnitPriceSpecification",
-                    price: "349",
-                    priceCurrency: "USD",
-                    unitText: "MONTH",
-                  },
-                },
-                {
-                  "@type": "Offer",
-                  name: "Domination",
-                  price: "449",
-                  priceCurrency: "USD",
-                  priceSpecification: {
-                    "@type": "UnitPriceSpecification",
-                    price: "449",
-                    priceCurrency: "USD",
-                    unitText: "MONTH",
-                  },
-                },
-              ],
+              offers: {
+                "@type": "Offer",
+                name: "Complete Platform",
+                price: "5000",
+                priceCurrency: "USD",
+                description:
+                  "Complete tattoo studio digital platform: 6 websites, 200+ SEO articles, booking, CRM, payments, referral program. $249/mo hosting after launch. 10% discount for upfront payment ($4,500).",
+                availability: "https://schema.org/InStock",
+              },
               aggregateRating: {
                 "@type": "AggregateRating",
                 ratingValue: "5",
