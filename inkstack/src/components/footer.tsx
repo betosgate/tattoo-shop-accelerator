@@ -10,7 +10,6 @@ const footerLinks = {
   ],
   Company: [
     { href: "/about", label: "About" },
-    { href: "/blog", label: "Blog" },
     { href: "/contact", label: "Contact" },
     { href: "/contact", label: "Book a Demo" },
   ],
@@ -32,7 +31,7 @@ export function Footer() {
                 <Zap className="h-4 w-4 text-electric" />
               </div>
               <span className="text-lg font-bold">
-                Ink<span className="text-electric">Stack</span>
+                Tattoo Shop <span className="text-electric">Accelerator</span>
               </span>
             </Link>
             <p className="text-sm text-ink-400 max-w-xs">
@@ -67,7 +66,7 @@ export function Footer() {
 
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-ink-500">
-            &copy; {new Date().getFullYear()} InkStack. All rights reserved.
+            &copy; {new Date().getFullYear()} Tattoo Shop Accelerator. All rights reserved.
           </p>
           <p className="text-sm text-ink-600">
             Built with precision for the tattoo industry.

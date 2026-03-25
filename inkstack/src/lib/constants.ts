@@ -1,6 +1,6 @@
-export const SITE_NAME = "InkStack";
+export const SITE_NAME = "Tattoo Shop Accelerator";
 export const SITE_DESCRIPTION = "The all-in-one digital platform for tattoo studios. 6 websites, 200+ SEO articles, booking, payments, CRM — all done for you.";
-export const SITE_URL = "https://inkstack.io";
+export const SITE_URL = "https://www.tattooshopaccelerator.com";
 
 export const NAV_LINKS = [
   { href: "/features", label: "Features" },
@@ -8,7 +8,6 @@ export const NAV_LINKS = [
   { href: "/seo", label: "SEO Results" },
   { href: "/pricing", label: "Pricing" },
   { href: "/about", label: "About" },
-  { href: "/blog", label: "Blog" },
 ] as const;
 
 export const PRICING_TIERS = [
@@ -107,7 +106,7 @@ export const TESTIMONIALS = [
     name: "Sarah Chen",
     role: "Owner, Lotus Studio",
     location: "Portland, OR",
-    quote: "I was spending $2K/month on Google Ads with garbage results. InkStack replaced all of that. Now we rank #1 for every tattoo search in our area — organically.",
+    quote: "I was spending $2K/month on Google Ads with garbage results. Tattoo Shop Accelerator replaced all of that. Now we rank #1 for every tattoo search in our area — organically.",
     rating: 5,
   },
   {
@@ -128,7 +127,7 @@ export const TESTIMONIALS = [
     name: "Tommy Nguyen",
     role: "Artist & Owner, True North Tattoo",
     location: "Seattle, WA",
-    quote: "I'm an artist, not a web developer. InkStack gave me a site that actually looks as good as my work. Clients constantly tell us we have the best website they've seen.",
+    quote: "I'm an artist, not a web developer. Tattoo Shop Accelerator gave me a site that actually looks as good as my work. Clients constantly tell us we have the best website they've seen.",
     rating: 5,
   },
   {
@@ -147,11 +146,11 @@ export const FAQ_ITEMS = [
   },
   {
     question: "Do I need any technical skills?",
-    answer: "Zero. We build, configure, and launch everything for you. The admin dashboard is designed for tattoo shop staff, not developers. If you can use Instagram, you can manage your InkStack dashboard.",
+    answer: "Zero. We build, configure, and launch everything for you. The admin dashboard is designed for tattoo shop staff, not developers. If you can use Instagram, you can manage your dashboard.",
   },
   {
     question: "What if I already have a website?",
-    answer: "We'll migrate your existing content, portfolio, and SEO value to your new InkStack platform. Most shops see improved search rankings within the first month after switching, because our tech stack is built for speed and SEO from the ground up.",
+    answer: "We'll migrate your existing content, portfolio, and SEO value to your new Tattoo Shop Accelerator platform. Most shops see improved search rankings within the first month after switching, because our tech stack is built for speed and SEO from the ground up.",
   },
   {
     question: "How are the 200+ SEO articles created?",

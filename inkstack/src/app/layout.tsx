@@ -18,8 +18,8 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "InkStack — The All-in-One Digital Platform for Tattoo Studios",
-    template: "%s | InkStack",
+    default: "Tattoo Shop Accelerator — The All-in-One Digital Platform for Tattoo Studios",
+    template: "%s | Tattoo Shop Accelerator",
   },
   description:
     "6 websites, 200+ SEO articles, online booking, payments, and CRM — all built for your tattoo studio. Dominate your local search results.",
@@ -33,14 +33,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    siteName: "InkStack",
-    title: "InkStack — The All-in-One Digital Platform for Tattoo Studios",
+    siteName: "Tattoo Shop Accelerator",
+    title: "Tattoo Shop Accelerator — The All-in-One Digital Platform for Tattoo Studios",
     description:
       "6 websites, 200+ SEO articles, online booking, payments, and CRM — all built for your tattoo studio.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "InkStack — The All-in-One Digital Platform for Tattoo Studios",
+    title: "Tattoo Shop Accelerator — The All-in-One Digital Platform for Tattoo Studios",
     description:
       "6 websites, 200+ SEO articles, online booking, payments, and CRM — all built for your tattoo studio.",
   },

@@ -19,7 +19,7 @@ export function Navbar() {
               <Zap className="h-4 w-4 text-electric" />
             </div>
             <span className="text-xl font-bold tracking-tight">
-              Ink<span className="text-electric">Stack</span>
+              Tattoo Shop <span className="text-electric">Accelerator</span>
             </span>
           </Link>
 

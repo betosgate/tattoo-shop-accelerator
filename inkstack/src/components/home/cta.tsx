@@ -32,7 +32,7 @@ export function CTASection() {
 
           <p className="mt-6 text-lg text-ink-300 max-w-2xl mx-auto">
             Stop losing clients to shops with better websites. Get a free demo
-            and see exactly how InkStack will transform your studio&apos;s digital
+            and see exactly how Tattoo Shop Accelerator will transform your studio&apos;s digital
             presence.
           </p>
 

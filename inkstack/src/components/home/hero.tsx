@@ -57,7 +57,7 @@ export function HeroSection() {
           className="mt-6 text-lg sm:text-xl text-ink-300 max-w-2xl mx-auto leading-relaxed"
         >
           Your competitors are getting the clients that should be yours.
-          InkStack gives you 6 websites, 200+ SEO articles, and a complete
+          Tattoo Shop Accelerator gives you 6 websites, 200+ SEO articles, and a complete
           booking platform — all done for you.
         </motion.p>
 
@@ -113,7 +113,7 @@ export function HeroSection() {
                 </div>
                 <div className="flex-1 mx-4">
                   <div className="bg-ink-700 rounded-md px-3 py-1 text-xs text-ink-400 text-center max-w-md mx-auto">
-                    yourstudio.inkstack.io
+                    yourstudio.tattooshopaccelerator.com
                   </div>
                 </div>
               </div>
