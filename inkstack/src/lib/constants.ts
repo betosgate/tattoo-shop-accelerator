@@ -3,6 +3,7 @@ export const SITE_DESCRIPTION = "The all-in-one digital platform for tattoo stud
 export const SITE_URL = "https://www.tattooshopaccelerator.com";
 
 export const NAV_LINKS = [
+  { href: "/demo", label: "See It Live" },
   { href: "/features", label: "Features" },
   { href: "/how-it-works", label: "How It Works" },
   { href: "/seo", label: "SEO Results" },
