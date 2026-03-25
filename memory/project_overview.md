@@ -5,33 +5,39 @@ type: project
 ---
 
 **Brand**: Tattoo Shop Accelerator
-**Domain**: www.tattooshopaccelerator.com (user points GoDaddy DNS → Vercel A record 76.76.21.21)
-**Vercel URL**: https://inkstack-psi.vercel.app (production alias)
+**Domain**: www.tattooshopaccelerator.com (user points GoDaddy DNS → Vercel)
+**Vercel URL**: https://inkstack-psi.vercel.app
 **GitHub**: https://github.com/betosgate/tattoo-shop-accelerator
-**What it sells**: Done-for-you digital presence for tattoo studios — 1 main website + 5 SEO satellite sites + 200+ articles + booking/CRM/payments
-**Target**: Tattoo shop owners across the United States
-**Tech**: Next.js 16, TypeScript, Tailwind CSS v4, Framer Motion, Supabase, Vercel
 **Project dir**: C:\Users\Admin\OneDrive\Documents\ClaudeProjects\TattooSalesSite\inkstack
 
-**All pages built and deployed**:
-- Homepage (hero, problem, stats, features, platform showcase, testimonials, pricing preview, FAQ, CTA)
-- Features (6 categories, comparison table vs Instagram/WordPress/generic)
+**All pages built and deployed (10 routes)**:
+- Homepage (hero w/ bg image, problem, stats, features, platform showcase, gallery, testimonials, pricing preview, FAQ, CTA)
+- **Demo/Walkthrough** (/demo) — THE key page:
+  - Full-stack overview (12 features)
+  - Live Sites Showcase (links to all 6 real Synergy sites)
+  - Booking Walkthrough (4-step with mockups)
+  - Dashboard Walkthrough (interactive Admin/Receptionist/Artist tabs)
+  - CRM Walkthrough (full client profile: tattoo history, sessions, notes, payments)
+  - SEO Showcase (5 satellites with article samples)
+  - Referral Program (partner flow + dashboard mockup)
+  - Consent Forms (17 medical conditions mockup)
+  - Portfolio Gallery (lightbox mockup with filters)
+- Features (6 categories, comparison table)
 - How It Works (5-step timeline)
 - SEO Results (satellite strategy, search terms, before/after)
 - Pricing (3 tiers: Starter $249/mo, Growth $349/mo, Domination $449/mo)
 - About (Beto Paredes bio)
-- Contact (form w/ Supabase API, phone 208-440-7609, email beto@betoparedes.com)
+- Contact (form w/ Supabase API, phone 208-440-7609)
 - API: /api/contact → Supabase leads table
-- NO blog (user explicitly said no)
+- NO blog
 
-**Supabase setup needed**: User must create Supabase project, run supabase-schema.sql, add env vars to Vercel:
-- NEXT_PUBLIC_SUPABASE_URL
-- NEXT_PUBLIC_SUPABASE_ANON_KEY
+**Live example sites referenced**:
+- Main: https://www.synergytattoorexburg.com
+- Satellite 1: https://www.tattoosrexburgidaho.com
+- Satellite 2: https://www.rexburgtattooguide.com
+- Satellite 3: https://www.tattoossaintanthonyidaho.com
+- Satellite 4: https://www.tattoosidahofallsidaho.com
+- Satellite 5: https://www.tattoosrigbyidaho.com
 
-**GoDaddy DNS needed**: Add A record for www → 76.76.21.21
-
-**Design**: Dark premium (ink-950 bg), electric blue (#00d4ff) accent, glassmorphism, Framer Motion
-**Git**: 3 commits on master, pushed to GitHub
-
-**Why:** User wants to attract tattoo shops nationwide
-**How to apply:** Site is deployed and live, needs Supabase env vars and DNS pointing to complete setup
+**Git**: 6 commits on master, all pushed
+**Status**: Fully deployed, needs Supabase env vars + GoDaddy DNS pointing

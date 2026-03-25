@@ -21,7 +21,7 @@ const liveSites = [
     description: "Local business guide targeting Rexburg — covers shops, pricing, walk-in policies, and local tattoo culture.",
     color: "neon-green",
     features: ["Local Search Targeting", "Booking CTAs", "Unique Branding"],
-    articles: "40+",
+    articles: "39",
   },
   {
     name: "Rexburg Tattoo Guide",
@@ -30,7 +30,7 @@ const liveSites = [
     description: "Educational resource hub — deep-dive style guides, tattoo care encyclopedia, and placement guides for the Rexburg market.",
     color: "neon-pink",
     features: ["Style Guides", "Aftercare Content", "Booking CTAs"],
-    articles: "40+",
+    articles: "39",
   },
   {
     name: "Tattoos Saint Anthony Idaho",
@@ -39,7 +39,7 @@ const liveSites = [
     description: "Targeting Saint Anthony and surrounding rural communities with heritage and traditional tattoo focus.",
     color: "electric",
     features: ["Rural Market Focus", "Traditional Styles", "Booking CTAs"],
-    articles: "40+",
+    articles: "39",
   },
   {
     name: "Tattoos Idaho Falls Idaho",
@@ -48,7 +48,7 @@ const liveSites = [
     description: "Targeting Idaho Falls — the largest nearby city. Trending styles focus for the urban market.",
     color: "neon-green",
     features: ["Urban Market Focus", "Trending Styles", "Booking CTAs"],
-    articles: "40+",
+    articles: "39",
   },
   {
     name: "Tattoos Rigby Idaho",
@@ -57,7 +57,7 @@ const liveSites = [
     description: "Targeting Rigby and Jefferson County with community-focused tattoo content and local area guides.",
     color: "neon-pink",
     features: ["Community Focus", "Local Guides", "Booking CTAs"],
-    articles: "40+",
+    articles: "39",
   },
 ];
 
