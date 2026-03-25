@@ -34,7 +34,7 @@ const problems = [
 export function ProblemSection() {
   return (
     <Section className="relative">
-      <div className="section-divider mb-10" />
+      <div className="section-divider mb-6" />
       <FadeUp>
         <SectionHeader
           badge="Sound Familiar?"

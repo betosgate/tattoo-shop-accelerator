@@ -17,7 +17,7 @@ export function PageHero({
   backgroundImage?: string;
 }) {
   return (
-    <section className="relative pt-28 pb-12 overflow-hidden">
+    <section className="relative pt-24 pb-8 overflow-hidden">
       {/* Background image */}
       {backgroundImage && (
         <div className="absolute inset-0">

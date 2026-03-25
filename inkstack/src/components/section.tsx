@@ -10,7 +10,7 @@ export function Section({
   id?: string;
 }) {
   return (
-    <section id={id} className={`py-12 sm:py-16 ${className}`}>
+    <section id={id} className={`py-8 sm:py-10 ${className}`}>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">{children}</div>
     </section>
   );
@@ -28,7 +28,7 @@ export function SectionHeader({
   centered?: boolean;
 }) {
   return (
-    <div className={`max-w-3xl ${centered ? "mx-auto text-center" : ""} mb-8`}>
+    <div className={`max-w-3xl ${centered ? "mx-auto text-center" : ""} mb-6`}>
       {badge && (
         <span className="inline-block px-3 py-1 text-xs font-semibold tracking-wider uppercase text-electric bg-electric/10 border border-electric/20 rounded-full mb-4">
           {badge}
