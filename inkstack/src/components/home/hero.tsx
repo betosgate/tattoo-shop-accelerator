@@ -56,11 +56,11 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1 }}
-          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1] max-w-5xl mx-auto"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.15] max-w-5xl mx-auto"
         >
-          Run Your Studio. Fill Your Chair.
+          <span className="whitespace-nowrap">Run Your Studio. Fill Your Chair.</span>
           <br />
-          <span className="gradient-text">The Ultimate Tattoo Shop Platform.</span>
+          <span className="gradient-text whitespace-nowrap">The Ultimate Tattoo Shop Platform.</span>
         </motion.h1>
 
         {/* Subheadline */}
