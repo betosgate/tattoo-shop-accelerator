@@ -7,13 +7,13 @@ export const IMAGES = {
   heroTattooSession: "https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?w=1920&q=80&auto=format&fit=crop",
 
   // Tattoo artists at work
-  artistCloseup: "https://images.unsplash.com/photo-1590246815117-0b5d0d3a5f0e?w=800&q=80&auto=format&fit=crop",
+  artistCloseup: "https://images.unsplash.com/photo-1562322140-8baeececf3df?w=800&q=80&auto=format&fit=crop",
   artistWorking1: "https://images.unsplash.com/photo-1565058379802-bbe93b2f703a?w=800&q=80&auto=format&fit=crop",
   artistWorking2: "https://images.unsplash.com/photo-1542856391-010fb87dcfed?w=800&q=80&auto=format&fit=crop",
 
   // Studio / shop interiors
   studioInterior: "https://images.unsplash.com/photo-1621112904887-419379ce6824?w=800&q=80&auto=format&fit=crop",
-  tattooChair: "https://images.unsplash.com/photo-1604199171750-20e003c0127a?w=800&q=80&auto=format&fit=crop",
+  tattooChair: "https://images.unsplash.com/photo-1571974599782-87624638275e?w=800&q=80&auto=format&fit=crop",
 
   // Tattooed people / lifestyle
   tattooedArm: "https://images.unsplash.com/photo-1475403614135-5f1aa0eb5015?w=800&q=80&auto=format&fit=crop",
@@ -24,7 +24,7 @@ export const IMAGES = {
 
   // Close-up tattoo work / detail shots
   tattooDetail1: "https://images.unsplash.com/photo-1568515045052-f9a854d70bfd?w=800&q=80&auto=format&fit=crop",
-  tattooDetail2: "https://images.unsplash.com/photo-1612459284270-27f4639e1120?w=800&q=80&auto=format&fit=crop",
+  tattooDetail2: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=80&auto=format&fit=crop",
   tattooMachine: "https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?w=600&q=80&auto=format&fit=crop",
 
   // People getting tattooed
