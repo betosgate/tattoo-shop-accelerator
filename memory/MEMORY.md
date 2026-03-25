@@ -1,0 +1,2 @@
+- [Project Overview](project_overview.md) — InkStack: SaaS marketing site selling tattoo studio digital platforms to US shop owners
+- [User Profile](user_profile.md) — User building tattoo SaaS business, wants autonomous decisions, save often
