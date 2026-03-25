@@ -206,7 +206,7 @@ export function BookingWalkthrough() {
   const [activePath, setActivePath] = useState<"a" | "b">("a");
 
   return (
-    <Section>
+    <Section id="booking">
       <FadeUp>
         <SectionHeader
           badge="Booking System — Two Paths"

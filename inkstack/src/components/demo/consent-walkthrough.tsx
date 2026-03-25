@@ -14,7 +14,7 @@ const medicalConditions = [
 
 export function ConsentWalkthrough() {
   return (
-    <Section className="bg-ink-900/30">
+    <Section id="consent" className="bg-ink-900/30">
       <FadeUp>
         <SectionHeader
           badge="Digital Consent Forms"

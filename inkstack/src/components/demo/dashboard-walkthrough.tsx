@@ -149,7 +149,7 @@ export function DashboardWalkthrough() {
   const role = roles.find((r) => r.id === activeRole)!;
 
   return (
-    <Section className="bg-ink-900/30">
+    <Section id="dashboards" className="bg-ink-900/30">
       <FadeUp>
         <SectionHeader
           badge="Admin Dashboard"

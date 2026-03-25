@@ -22,7 +22,7 @@ const footerLinks = {
 export function Footer() {
   return (
     <footer className="border-t border-white/5 bg-ink-950">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
@@ -62,7 +62,7 @@ export function Footer() {
           ))}
         </div>
 
-        <div className="section-divider mt-12 mb-8" />
+        <div className="section-divider mt-8 mb-6" />
 
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-ink-500">

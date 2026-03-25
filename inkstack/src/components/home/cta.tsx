@@ -8,7 +8,7 @@ import { IMAGES } from "@/lib/images";
 
 export function CTASection() {
   return (
-    <section className="relative py-32 overflow-hidden">
+    <section className="relative py-16 overflow-hidden">
       {/* Background tattoo image */}
       <div className="absolute inset-0">
         <Image

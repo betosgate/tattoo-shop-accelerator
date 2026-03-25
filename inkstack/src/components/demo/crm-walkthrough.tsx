@@ -6,7 +6,7 @@ import { User, Tag, History, FileText, CreditCard, Star } from "lucide-react";
 
 export function CRMWalkthrough() {
   return (
-    <Section>
+    <Section id="crm">
       <FadeUp>
         <SectionHeader
           badge="Tattoo-Specific CRM"

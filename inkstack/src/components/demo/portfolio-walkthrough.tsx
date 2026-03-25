@@ -6,7 +6,7 @@ import { Image, Video, Monitor, Smartphone, ArrowRight } from "lucide-react";
 
 export function PortfolioWalkthrough() {
   return (
-    <Section>
+    <Section id="portfolio">
       <FadeUp>
         <SectionHeader
           badge="Portfolio & Gallery"

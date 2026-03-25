@@ -6,7 +6,7 @@ import { Handshake, QrCode, DollarSign, BarChart3 } from "lucide-react";
 
 export function ReferralWalkthrough() {
   return (
-    <Section>
+    <Section id="referrals">
       <FadeUp>
         <SectionHeader
           badge="Referral Partner Program"
