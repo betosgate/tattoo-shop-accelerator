@@ -6,14 +6,14 @@ import { FadeUp } from "@/components/motion";
 import { IMAGES } from "@/lib/images";
 
 const galleryImages = [
-  { src: IMAGES.artistWorking1, alt: "Tattoo artist carefully working on a client's piece", span: "col-span-2 row-span-2" },
-  { src: IMAGES.tattooedPerson1, alt: "Person showing detailed tattoo artwork", span: "col-span-1 row-span-1" },
-  { src: IMAGES.tattooDetail1, alt: "Close-up of intricate tattoo detail work", span: "col-span-1 row-span-1" },
-  { src: IMAGES.gettingTattooed1, alt: "Client getting tattooed in a professional studio", span: "col-span-1 row-span-2" },
-  { src: IMAGES.tattooedArm, alt: "Detailed sleeve tattoo artwork", span: "col-span-1 row-span-1" },
-  { src: IMAGES.studioInterior, alt: "Modern tattoo studio interior", span: "col-span-1 row-span-1" },
-  { src: IMAGES.tattooedPerson2, alt: "Tattooed person portrait", span: "col-span-1 row-span-1" },
-  { src: IMAGES.artistWorking2, alt: "Tattoo artist in session", span: "col-span-2 row-span-1" },
+  { src: IMAGES.artistWorking1, alt: "Tattoo artist tattooing a client's arm", span: "col-span-2 row-span-2" },
+  { src: IMAGES.tattooedArm, alt: "Detailed arm tattoo artwork", span: "col-span-1 row-span-1" },
+  { src: IMAGES.tattooDetail1, alt: "Artist tattooing close-up detail work", span: "col-span-1 row-span-1" },
+  { src: IMAGES.gettingTattooed1, alt: "Client getting tattooed in studio", span: "col-span-1 row-span-2" },
+  { src: IMAGES.tattooSleeve, alt: "Full tattoo sleeve artwork", span: "col-span-1 row-span-1" },
+  { src: IMAGES.tattooDetail2, alt: "Tribal tattoo close-up on skin", span: "col-span-1 row-span-1" },
+  { src: IMAGES.backTattoo, alt: "Floral back tattoo design", span: "col-span-1 row-span-1" },
+  { src: IMAGES.artistWorking2, alt: "Tattoo artist working on a piece", span: "col-span-2 row-span-1" },
 ];
 
 export function GallerySection() {
