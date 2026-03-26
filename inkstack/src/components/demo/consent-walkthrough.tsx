@@ -5,11 +5,12 @@ import { FadeUp } from "@/components/motion";
 import { Shield, AlertCircle, CheckSquare, Pen } from "lucide-react";
 
 const medicalConditions = [
-  "Heart Disease", "Diabetes", "Epilepsy", "Hemophilia",
-  "Hepatitis", "HIV/AIDS", "Skin Conditions", "Autoimmune Disease",
-  "Blood Disorders", "Cancer", "Pregnancy", "Nursing",
-  "Recent Surgery", "Keloid Scarring", "Allergies", "Metal Allergies",
-  "Latex Sensitivity",
+  "Heart Disease", "High/Low Blood Pressure", "Diabetes", "Epilepsy/Seizures",
+  "Hemophilia/Bleeding", "Blood Thinners", "Hepatitis A/B/C", "HIV/AIDS",
+  "Skin Diseases", "Skin Cancer", "Keloid Scarring", "Autoimmune Disorder",
+  "Immunodeficiency", "Organ Transplant", "Cancer/Treatment", "Taking Accutane",
+  "Recent Surgery", "Pregnant", "Nursing", "Latex Allergy",
+  "Adhesive/Tape Allergy", "Alcohol (24hrs)", "Recreational Drugs (24hrs)",
 ];
 
 export function ConsentWalkthrough() {
@@ -19,7 +20,7 @@ export function ConsentWalkthrough() {
         <SectionHeader
           badge="Digital Consent Forms"
           title="Professional. Thorough. Legally Sound."
-          description="No more clipboards and paper forms. Clients complete a comprehensive digital health questionnaire before their appointment — protecting your studio and creating a professional first impression."
+          description="23-condition health screening, emergency contacts, medication history, photo release, aftercare acknowledgment, and digital signature — all completed before they sit in the chair. Idaho-law compliant including minor consent requirements."
         />
       </FadeUp>
 

@@ -17,8 +17,8 @@ function PathAWalkthrough() {
     <div className="space-y-6">
       {[
         {
-          step: "1", title: "Browse Curated Designs",
-          desc: "Clients browse 20+ ready-to-book designs in a visual grid. Each card shows the design image, name, price range, estimated hours, and available sizes.",
+          step: "1", title: "Browse 198 Designs Across 7 Categories",
+          desc: "Clients browse 198 ready-to-book designs filtered by category (Flowers, Black & Grey, Panther, Dragon, Pin-Up, Eagle, and more). Sticky filter bar lets them check/uncheck categories. Each card shows the design image, name, and a 'Choose Size & Book' button.",
           mockup: (
             <div className="grid grid-cols-3 gap-2">
               {exampleDesigns.slice(0, 6).map((d) => (
@@ -33,42 +33,59 @@ function PathAWalkthrough() {
         },
         {
           step: "2", title: "Select Size & Body Placement",
-          desc: "Choose from Small, Medium, Large, or Extra Large — pricing updates automatically at $100/hr. Then pick from 44 body placement areas. Admins can exclude placements per design (e.g., large back piece blocked from fingers).",
+          desc: "6 pricing tiers by square inches — from 4 sq in ($100/1hr) to 9 sq in ($350/3.5hrs). Larger than 9? Auto-redirects to custom consultation with the design pre-loaded. Body placements auto-adjust: finger and behind-ear disable at 5+ sq in, neck and hands add a $50/hr surcharge.",
           mockup: (
             <div className="space-y-3">
               <div>
-                <p className="text-[10px] text-ink-400 mb-1.5">Select Size</p>
-                <div className="flex gap-2">
+                <p className="text-[10px] text-ink-400 mb-1.5">Select Size (6 tiers)</p>
+                <div className="grid grid-cols-3 gap-1.5">
                   {[
-                    { size: "S", hrs: "1-1.5 hrs", price: "$100-150" },
-                    { size: "M", hrs: "2-3 hrs", price: "$200-300" },
-                    { size: "L", hrs: "3-4 hrs", price: "$300-400" },
-                    { size: "XL", hrs: "4-6 hrs", price: "$400-600" },
+                    { sq: "4 sq in", hrs: "1 hr", price: "$100" },
+                    { sq: "5 sq in", hrs: "1.5 hrs", price: "$150" },
+                    { sq: "6 sq in", hrs: "2 hrs", price: "$200", selected: true },
+                    { sq: "7 sq in", hrs: "2.5 hrs", price: "$250" },
+                    { sq: "8 sq in", hrs: "3 hrs", price: "$300" },
+                    { sq: "9 sq in", hrs: "3.5 hrs", price: "$350" },
                   ].map((s) => (
-                    <div key={s.size} className={`flex-1 py-2 rounded text-center border ${s.size === "M" ? "border-electric text-electric bg-electric/10" : "border-white/10 text-ink-400"}`}>
-                      <p className="text-xs font-bold">{s.size}</p>
-                      <p className="text-[8px] mt-0.5">{s.hrs}</p>
-                      <p className="text-[8px]">{s.price}</p>
+                    <div key={s.sq} className={`py-1.5 rounded text-center border ${s.selected ? "border-electric text-electric bg-electric/10" : "border-white/10 text-ink-300"}`}>
+                      <p className="text-[9px] font-bold">{s.sq}</p>
+                      <p className="text-[7px]">{s.hrs} — {s.price}</p>
                     </div>
                   ))}
                 </div>
+                <p className="text-[8px] text-ink-500 mt-1 text-center">Larger than 9 sq in? → Auto-redirects to custom consultation</p>
               </div>
               <div>
                 <p className="text-[10px] text-ink-400 mb-1.5">Select Placement (44 areas)</p>
                 <div className="grid grid-cols-4 gap-1.5">
-                  {["Upper Arm", "Forearm", "Back", "Chest", "Ribs", "Thigh", "Calf", "Neck"].map((area) => (
-                    <div key={area} className={`text-center py-1.5 rounded text-[8px] border ${area === "Forearm" ? "bg-electric/10 text-electric border-electric/20" : "bg-ink-800 text-ink-300 border-white/5"}`}>
-                      {area}
+                  {[
+                    { area: "Upper Arm", ok: true },
+                    { area: "Forearm", ok: true, selected: true },
+                    { area: "Back", ok: true },
+                    { area: "Chest", ok: true },
+                    { area: "Neck +$50", ok: true, premium: true },
+                    { area: "Thigh", ok: true },
+                    { area: "Wrists", ok: false },
+                    { area: "Finger", ok: false },
+                  ].map((a) => (
+                    <div key={a.area} className={`text-center py-1.5 rounded text-[8px] border ${
+                      a.selected ? "bg-electric/10 text-electric border-electric/20" :
+                      !a.ok ? "bg-ink-800/50 text-ink-600 border-white/5 line-through" :
+                      a.premium ? "bg-neon-pink/10 text-neon-pink border-neon-pink/20" :
+                      "bg-ink-800 text-ink-300 border-white/5"
+                    }`}>
+                      {a.area}
                     </div>
                   ))}
                 </div>
+                <p className="text-[8px] text-ink-500 mt-1 text-center">Strikethrough = excluded at this size &middot; Pink = premium surcharge</p>
               </div>
             </div>
           ),
         },
         {
           step: "3", title: "Pay Deposit & Book",
-          desc: "Deposits are $20/hour, collected securely via Stripe. A 2-hour medium tattoo = $40 deposit. Clients can also enter a referral code for 5% off. Remaining balance due at the appointment.",
+          desc: "Deposits are $20/hour, collected securely via Stripe. A 6 sq in design (2 hrs) = $40 deposit. Clients can enter a referral code for 5% off. 30-minute prep padding is auto-scheduled between appointments (invisible to clients). Remaining balance due at the appointment.",
           mockup: (
             <div className="space-y-2">
               <div className="rounded-lg bg-ink-800 border border-white/5 p-3">

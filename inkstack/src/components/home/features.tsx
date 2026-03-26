@@ -20,75 +20,75 @@ import {
 const features = [
   {
     icon: Calendar,
-    title: "Ready-to-Book Design Shop",
+    title: "198 Ready-to-Book Designs",
     description:
-      "Clients browse your template designs, pick a size, choose body placement, select an artist, pay a deposit, and book a time — all without talking to anyone. Hours and pricing are predetermined. Zero time wasted on templates.",
+      "Clients browse 198 template designs across 7 categories (Flowers, Black & Grey, Panther, Dragon, Pin-Up, Eagle, and more). Pick a size, choose body placement, pay a deposit, book a time — zero conversations needed.",
   },
   {
     icon: CreditCard,
-    title: "Stripe Deposits & Payments",
+    title: "6 Pricing Tiers by Square Inch",
     description:
-      "Collect $20/hr deposits upfront via Stripe. Consultations are $25 flat. Remaining balance due at session. No more Venmo, Cash App, or 'I'll pay later.'",
+      "Pricing auto-calculates by size: 4 sq in ($100/1hr) up to 9 sq in ($350/3.5hrs). Deposits collected at $20/hr via Stripe. Consultations $25 flat. Larger than 9 sq in? Seamlessly redirects to custom consultation.",
   },
   {
     icon: Palette,
-    title: "Shopping Cart with 44 Body Areas",
+    title: "Smart Body Placement System",
     description:
-      "Clients pick their design, choose a size (S/M/L/XL), select exact body placement, and pricing adjusts automatically. Premium surcharges for sensitive areas built in.",
+      "44 body areas with intelligent size exclusions — finger and behind-ear auto-disable at 5+ sq in, wrists at 6+, neck and hands carry a $50/hr premium surcharge. Clients only see placements that work for their size.",
   },
   {
     icon: BarChart3,
     title: "3 Role-Based Dashboards",
     description:
-      "Admin gets full control. Receptionist gets today's schedule, phone booking wizard, and check-in tools. Artists get their personal schedule and session tracking.",
+      "Admin: full control over bookings, clients, designs, payments, calendar, categories, and settings. Receptionist: today's schedule, check-in, phone booking wizard. Artist: personal schedule, session notes, project tracking.",
   },
   {
     icon: Users,
     title: "Tattoo-Specific CRM",
     description:
-      "Track every client from consultation to touch-up. Session progress bars (linework → shading → color), payment history, notes, tags (VIP, Regular, Walk-in), and consent status.",
+      "Client profiles with tattoo history, session-by-session tracking (linework → shading → color → touch-up), payment records, internal notes, consent status, and tags (VIP, Regular, Walk-in, First Timer).",
   },
   {
     icon: Shield,
     title: "Digital Consent Forms",
     description:
-      "Full health questionnaire — 17 medical conditions, allergies, medications, emergency contacts, and digital signature. Legally compliant. No more paper clipboards.",
+      "23-condition health questionnaire covering heart disease, diabetes, blood thinners, skin conditions, pregnancy, allergies, and more. Emergency contacts, digital signature, photo release. Idaho-law compliant.",
   },
   {
     icon: Handshake,
     title: "Referral Partner Program",
     description:
-      "Barber shops, gyms, and local businesses get referral codes. Customers get 5% off, partners earn 5% commission. QR code materials, monthly payouts, partner dashboard.",
+      "Local businesses get branded posters, cards, and QR codes. Customers get 5% off deposits, partners earn 5% commission on all spending. Online dashboard, monthly payouts, real-time tracking.",
   },
   {
     icon: Image,
-    title: "Portfolio Gallery",
+    title: "Portfolio & Category Management",
     description:
-      "Lightbox gallery with image and video support. Filter by style. Each artist gets their own section. Show your work the way it deserves to be seen.",
+      "Lightbox gallery with image and video support. Admin manages categories — add, rename, move images between categories. Customers filter by category with sticky checkbox pills.",
   },
   {
     icon: ClipboardCheck,
     title: "Custom Booking Links",
     description:
-      "After a consultation, admin creates a personalized booking link with the exact session plan (linework, shading, color). Client picks dates and pays deposits via the link.",
+      "After a consultation, admin creates a personalized link with exact sessions (linework, shading, color), hours, and pricing. Client picks dates and pays $20/hr deposits. Links expire after 14 days, can regenerate.",
   },
   {
     icon: Smartphone,
-    title: "Mobile-First Everything",
+    title: "Configurable Studio Settings",
     description:
-      "70% of tattoo searches happen on mobile. Every page, form, dashboard, and booking flow is built mobile-first. Your clients book from their phone in under 2 minutes.",
+      "Control everything from one settings page: hourly rate, deposit rate, consultation fee, max session hours, prep padding between appointments, pricing tiers, premium surcharges, and referral commission rates.",
   },
   {
     icon: Globe,
-    title: "6 Websites, Not 1",
+    title: "6 Websites + 200 SEO Articles",
     description:
-      "Your main site plus 5 SEO satellite sites, each with unique branding, targeting a different surrounding city. 200+ long-form articles driving traffic to your booking system.",
+      "Your main studio site plus 5 satellite sites — each with unique branding, targeting a different surrounding city. 200+ long-form articles (1,500-2,500 words) driving traffic to your booking system 24/7.",
   },
   {
     icon: Search,
-    title: "200+ SEO Articles",
+    title: "Piercing Management",
     description:
-      "Each article is 1,500-2,500 words targeting local search terms — tattoo styles, placement guides, aftercare, pricing. Every article funnels readers to your booking page.",
+      "Full piercing module: booking, jewelry inventory tracking (titanium, gold, niobium), age verification (Idaho law compliant), aftercare instructions, status tracking, and walk-in piercing workflow.",
   },
 ];
 
