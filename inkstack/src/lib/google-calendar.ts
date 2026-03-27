@@ -84,7 +84,7 @@ export async function createBooking(params: {
   const endDateTime = new Date(startDateTime.getTime() + 30 * 60 * 1000);
 
   const event = await calendar.events.insert({
-    calendarId: CALENDAR_ID,
+    calendarId: "primary",
     requestBody: {
       summary:
         "Booking for demo and discussion on Tattoo Shop Accelerator over Zoom",
