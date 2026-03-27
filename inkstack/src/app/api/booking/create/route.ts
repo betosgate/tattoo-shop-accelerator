@@ -34,9 +34,10 @@ export async function POST(request: NextRequest) {
       end: event.end?.dateTime,
     });
   } catch (error) {
-    console.error("Failed to create booking:", error);
+    const errMsg = error instanceof Error ? error.message : String(error);
+    console.error("Failed to create booking:", errMsg, error);
     return NextResponse.json(
-      { error: "Failed to create booking. Please try again or call (208) 440-7609." },
+      { error: "Failed to create booking. Please try again or call (208) 440-7609.", debug: errMsg },
       { status: 500 }
     );
   }

@@ -13,9 +13,11 @@ function getAuth() {
   }
 
   const key = JSON.parse(credentials);
+  // Vercel env vars may double-escape newlines in the private key
+  const privateKey = key.private_key.replace(/\\n/g, "\n");
   return new google.auth.JWT({
     email: key.client_email,
-    key: key.private_key,
+    key: privateKey,
     scopes: SCOPES,
     subject: "beto@betoparedes.com", // impersonate calendar owner
   });
