@@ -45,7 +45,7 @@ export function Navbar() {
               Contact
             </Link>
             <Link
-              href="/contact"
+              href="/book-demo"
               className="px-5 py-2.5 text-sm font-semibold bg-electric text-ink-950 rounded-lg hover:bg-electric-light transition-colors glow-electric"
             >
               Book a Demo
@@ -84,7 +84,7 @@ export function Navbar() {
               ))}
               <div className="pt-3 border-t border-white/5">
                 <Link
-                  href="/contact"
+                  href="/book-demo"
                   onClick={() => setIsOpen(false)}
                   className="block w-full text-center px-5 py-2.5 text-sm font-semibold bg-electric text-ink-950 rounded-lg"
                 >

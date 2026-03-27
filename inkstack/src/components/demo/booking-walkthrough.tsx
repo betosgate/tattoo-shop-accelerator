@@ -17,8 +17,8 @@ function PathAWalkthrough() {
     <div className="space-y-6">
       {[
         {
-          step: "1", title: "Browse 198 Designs Across 7 Categories",
-          desc: "Clients browse 198 ready-to-book designs filtered by category (Flowers, Black & Grey, Panther, Dragon, Pin-Up, Eagle, and more). Sticky filter bar lets them check/uncheck categories. Each card shows the design image, name, and a 'Choose Size & Book' button.",
+          step: "1", title: "Browse 653 Designs Across 7 Categories",
+          desc: "Clients browse 653 ready-to-book designs filtered by category (Flowers, Black & Grey, Panther, Dragon, Pin-Up, Eagle, and more). Sticky filter bar lets them check/uncheck categories. Each card shows the design image, name, and a 'Choose Size & Book' button. You can adjust pricing and hourly commitments on any design, add your own, or remove ones you don't need.",
           mockup: (
             <div className="grid grid-cols-3 gap-2">
               {exampleDesigns.slice(0, 6).map((d) => (

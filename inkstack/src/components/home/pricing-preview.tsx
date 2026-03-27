@@ -60,7 +60,7 @@ export function PricingPreview() {
             </div>
 
             <Link
-              href="/contact"
+              href="/book-demo"
               className="flex items-center justify-center gap-2 w-full py-3 bg-electric text-ink-950 rounded-lg text-sm font-semibold hover:bg-electric-light transition-colors glow-electric"
             >
               Book a Free Demo

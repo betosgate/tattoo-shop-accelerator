@@ -33,7 +33,7 @@ export function PricingCards() {
                 One-time payment gets you the complete platform built and launched. Save $500 vs. the payment plan.
               </p>
               <Link
-                href="/contact"
+                href="/book-demo"
                 className="flex items-center justify-center gap-2 w-full py-3 rounded-lg text-sm font-semibold bg-neon-green/10 text-neon-green border border-neon-green/20 hover:bg-neon-green/20 transition-all"
               >
                 Get Started — Save $500
@@ -58,7 +58,7 @@ export function PricingCards() {
                 $1,250 down to start, then 3 monthly payments of $1,250. Platform builds during payment period.
               </p>
               <Link
-                href="/contact"
+                href="/book-demo"
                 className="flex items-center justify-center gap-2 w-full py-3 rounded-lg text-sm font-semibold border border-white/10 text-white hover:bg-white/5 transition-all"
               >
                 Start with $1,250 Down

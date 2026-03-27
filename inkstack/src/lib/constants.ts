@@ -19,7 +19,7 @@ export const UPFRONT_DISCOUNT = 0.10;
 
 export const PLATFORM_FEATURES = [
   "Full tattoo studio website",
-  "198 ready-to-book designs across 7 categories",
+  "653 ready-to-book designs across 7 categories — fully adjustable pricing, hourly rates, and you can add or remove any design",
   "5 SEO satellite websites (200+ articles)",
   "Online booking (browse designs + custom consultation)",
   "6 pricing tiers by square inch with auto-calculate",
@@ -39,7 +39,7 @@ export const PLATFORM_FEATURES = [
 ] as const;
 
 export const STATS = [
-  { value: "198", label: "Ready-to-Book Designs", suffix: "" },
+  { value: "653", label: "Ready-to-Book Designs", suffix: "" },
   { value: "44", label: "Body Areas Mapped", suffix: "" },
   { value: "6", label: "Websites Deployed", suffix: "" },
   { value: "200", label: "SEO Articles Included", suffix: "+" },

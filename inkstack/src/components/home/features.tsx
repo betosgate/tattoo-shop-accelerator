@@ -20,9 +20,9 @@ import {
 const features = [
   {
     icon: Calendar,
-    title: "198 Ready-to-Book Designs",
+    title: "653 Ready-to-Book Designs",
     description:
-      "Clients browse 198 template designs across 7 categories (Flowers, Black & Grey, Panther, Dragon, Pin-Up, Eagle, and more). Pick a size, choose body placement, pay a deposit, book a time — zero conversations needed.",
+      "Clients browse 653 template designs across 7 categories (Flowers, Black & Grey, Panther, Dragon, Pin-Up, Eagle, and more). Pick a size, choose body placement, pay a deposit, book a time — zero conversations needed. You control the pricing and hourly rates on every design, and can add new designs or remove any you don't want.",
   },
   {
     icon: CreditCard,
