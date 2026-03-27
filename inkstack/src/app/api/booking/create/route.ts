@@ -36,6 +36,10 @@ export async function POST(request: NextRequest) {
   } catch (error) {
     const errMsg = error instanceof Error ? error.message : String(error);
     console.error("Failed to create booking:", errMsg, error);
+    // Show specific message for availability conflicts
+    if (errMsg.includes("no longer available")) {
+      return NextResponse.json({ error: errMsg }, { status: 409 });
+    }
     return NextResponse.json(
       { error: "Failed to create booking. Please try again or call (208) 440-7609." },
       { status: 500 }

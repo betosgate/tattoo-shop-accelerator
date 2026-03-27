@@ -1,6 +1,5 @@
 import { google } from "googleapis";
 
-const CALENDAR_ID = process.env.GOOGLE_CALENDAR_ID || "primary";
 const SCOPES = [
   "https://www.googleapis.com/auth/calendar.readonly",
   "https://www.googleapis.com/auth/calendar.events",
@@ -30,18 +29,22 @@ export async function getAvailableSlots(dateStr: string): Promise<string[]> {
   const dayStart = new Date(`${dateStr}T00:00:00`);
   const dayEnd = new Date(`${dateStr}T23:59:59`);
 
-  // Get busy times from free/busy API
-  const freeBusy = await calendar.freebusy.query({
-    requestBody: {
-      timeMin: dayStart.toISOString(),
-      timeMax: dayEnd.toISOString(),
-      timeZone: "America/Boise",
-      items: [{ id: CALENDAR_ID }],
-    },
+  // Use events.list for reliable busy time detection (works with impersonation)
+  const eventsRes = await calendar.events.list({
+    calendarId: "primary",
+    timeMin: dayStart.toISOString(),
+    timeMax: dayEnd.toISOString(),
+    timeZone: "America/Boise",
+    singleEvents: true,
+    orderBy: "startTime",
   });
 
-  const busySlots =
-    freeBusy.data.calendars?.[CALENDAR_ID]?.busy || [];
+  const busySlots = (eventsRes.data.items || [])
+    .filter((event) => event.status !== "cancelled" && event.start && event.end)
+    .map((event) => ({
+      start: event.start!.dateTime || event.start!.date!,
+      end: event.end!.dateTime || event.end!.date!,
+    }));
 
   // Generate 30-min slots from 9am to 5pm (last slot at 4:30pm)
   const slots: string[] = [];
@@ -53,8 +56,8 @@ export async function getAvailableSlots(dateStr: string): Promise<string[]> {
 
       // Check if slot overlaps with any busy period
       const isAvailable = !busySlots.some((busy) => {
-        const busyStart = new Date(busy.start!);
-        const busyEnd = new Date(busy.end!);
+        const busyStart = new Date(busy.start);
+        const busyEnd = new Date(busy.end);
         return slotStart < busyEnd && slotEnd > busyStart;
       });
 
@@ -82,6 +85,12 @@ export async function createBooking(params: {
 
   const startDateTime = new Date(`${params.date}T${params.time}:00`);
   const endDateTime = new Date(startDateTime.getTime() + 30 * 60 * 1000);
+
+  // Double-check availability before creating (prevent race conditions)
+  const availableSlots = await getAvailableSlots(params.date);
+  if (!availableSlots.includes(params.time)) {
+    throw new Error("This time slot is no longer available. Please pick another time.");
+  }
 
   const event = await calendar.events.insert({
     calendarId: "primary",
