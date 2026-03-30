@@ -3,6 +3,7 @@ export const SITE_DESCRIPTION = "The all-in-one digital platform for tattoo stud
 export const SITE_URL = "https://www.tattooshopaccelerator.com";
 
 export const NAV_LINKS = [
+  { href: "/ai-design-studio", label: "AI Design Studio" },
   { href: "/demo", label: "See It Live" },
   { href: "/features", label: "Features" },
   { href: "/how-it-works", label: "How It Works" },
@@ -18,6 +19,7 @@ export const PAYMENT_PLAN_MONTHLY = 1250;
 export const UPFRONT_DISCOUNT = 0.10;
 
 export const PLATFORM_FEATURES = [
+  "AI Tattoo Design Studio — customers design with AI, see pricing, and book directly (20 styles, 4 variations per click)",
   "Full tattoo studio website",
   "653 ready-to-book designs across 7 categories — fully adjustable pricing, hourly rates, and you can add or remove any design",
   "5 SEO satellite websites (200+ articles)",

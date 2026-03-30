@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { Section, SectionHeader } from "@/components/section";
 import { FadeUp, StaggerContainer, StaggerItem } from "@/components/motion";
 import {
@@ -15,6 +16,8 @@ import {
   Smartphone,
   Palette,
   ClipboardCheck,
+  Sparkles,
+  ArrowRight,
 } from "lucide-react";
 
 const features = [
@@ -101,6 +104,41 @@ export function FeaturesSection() {
           title="Everything Your Studio Needs to Run & Grow"
           description="Not a website builder. Not a booking widget. A complete digital platform built from the ground up for how tattoo shops actually work."
         />
+      </FadeUp>
+
+      {/* AI Design Studio spotlight card */}
+      <FadeUp delay={0.1}>
+        <Link href="/ai-design-studio" className="block mb-6 group">
+          <div className="glass-card rounded-xl p-6 border-electric/20 bg-gradient-to-r from-electric/5 via-transparent to-neon-pink/5 hover:border-electric/30 transition-all relative overflow-hidden">
+            {/* Subtle glow */}
+            <div className="absolute top-0 right-0 w-48 h-48 bg-electric/5 rounded-full blur-[80px] pointer-events-none" />
+
+            <div className="relative flex flex-col sm:flex-row sm:items-center gap-4">
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-electric/20 border border-electric/30">
+                <Sparkles className="h-6 w-6 text-electric" />
+              </div>
+              <div className="flex-1">
+                <div className="flex items-center gap-2 mb-1">
+                  <h3 className="text-base font-bold text-white">
+                    AI Tattoo Design Studio
+                  </h3>
+                  <span className="px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider bg-electric/20 text-electric rounded-full border border-electric/30">
+                    New
+                  </span>
+                </div>
+                <p className="text-sm text-ink-400 leading-relaxed">
+                  Customers design custom tattoos with AI — 20 styles, body placement awareness,
+                  real-time pricing — then book directly on your calendar. The only AI tool that connects
+                  design to booking. <span className="text-electric font-medium">$10 profit per design pack.</span>
+                </p>
+              </div>
+              <div className="flex items-center gap-1 text-sm font-medium text-electric shrink-0 group-hover:gap-2 transition-all">
+                Learn more
+                <ArrowRight className="h-4 w-4" />
+              </div>
+            </div>
+          </div>
+        </Link>
       </FadeUp>
 
       <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">

@@ -1,14 +1,27 @@
 "use client";
 
+import Link from "next/link";
 import { Section } from "@/components/section";
 import { FadeUp, StaggerContainer, StaggerItem } from "@/components/motion";
 import {
   Calendar, CreditCard, Search, Users, Image, Shield,
   BarChart3, Globe, Handshake, Phone, FileText, MapPin,
   UserCheck, Bell, Palette, Layout, ClipboardCheck, Heart,
+  Sparkles, Wand2, CalendarCheck, DollarSign, Pencil, ArrowRight,
 } from "lucide-react";
 
 const categories = [
+  {
+    title: "AI Tattoo Design Studio",
+    description: "The only AI design tool that lives on your website and connects directly to your booking calendar. Customers design, see pricing, and book — all in one flow.",
+    spotlight: true,
+    features: [
+      { icon: Wand2, name: "AI-Powered Generation", detail: "20 professionally curated tattoo styles with expert-crafted prompts — generates 4 unique variations per click, not generic AI art" },
+      { icon: Pencil, name: "Refine & Iterate", detail: "Customers edit any design with natural language: \"add roses,\" \"make it bolder,\" \"simplify it.\" Multiple rounds of refinement" },
+      { icon: CalendarCheck, name: "One-Click Booking", detail: "Design downloads automatically, booking modal shows estimated cost, and the consultation form arrives pre-filled with design details" },
+      { icon: DollarSign, name: "$10 Profit Per Pack", detail: "Customers pay $15 for 40 designs. You keep $10. Plus the consultations and tattoo sessions that follow — revenue you'd never capture otherwise" },
+    ],
+  },
   {
     title: "Booking & Payments",
     description: "Stop chasing clients through DMs. Give them a real booking experience.",
@@ -75,9 +88,24 @@ export function FeatureCategories() {
   return (
     <>
       {categories.map((category, idx) => (
-        <Section key={category.title} className={idx % 2 === 0 ? "" : "bg-ink-900/30"}>
+        <Section
+          key={category.title}
+          className={
+            category.spotlight
+              ? "bg-gradient-to-b from-electric/5 to-transparent"
+              : idx % 2 === 0
+                ? ""
+                : "bg-ink-900/30"
+          }
+        >
           <FadeUp>
             <div className="max-w-3xl mb-12">
+              {category.spotlight && (
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-electric/30 bg-electric/10 mb-4">
+                  <Sparkles className="h-3.5 w-3.5 text-electric" />
+                  <span className="text-xs font-semibold text-electric uppercase tracking-wider">New Feature</span>
+                </div>
+              )}
               <h2 className="text-2xl sm:text-3xl font-bold text-white">
                 {category.title}
               </h2>
@@ -88,7 +116,13 @@ export function FeatureCategories() {
           <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {category.features.map((feature) => (
               <StaggerItem key={feature.name}>
-                <div className="glass-card rounded-xl p-5 h-full group hover:border-electric/20 transition-all">
+                <div
+                  className={`glass-card rounded-xl p-5 h-full group transition-all ${
+                    category.spotlight
+                      ? "hover:border-electric/30 border-electric/10"
+                      : "hover:border-electric/20"
+                  }`}
+                >
                   <div className="flex items-start gap-4">
                     <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-electric/10 border border-electric/20 group-hover:bg-electric/20 transition-colors">
                       <feature.icon className="h-5 w-5 text-electric" />
@@ -102,6 +136,20 @@ export function FeatureCategories() {
               </StaggerItem>
             ))}
           </StaggerContainer>
+
+          {category.spotlight && (
+            <FadeUp delay={0.3}>
+              <div className="mt-8 text-center">
+                <Link
+                  href="/ai-design-studio"
+                  className="group inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold bg-electric text-ink-950 rounded-lg hover:bg-electric-light transition-colors glow-electric"
+                >
+                  See Full AI Design Studio Details
+                  <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </div>
+            </FadeUp>
+          )}
         </Section>
       ))}
     </>
