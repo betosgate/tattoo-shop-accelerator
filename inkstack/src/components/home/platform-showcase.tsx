@@ -128,7 +128,7 @@ const tabs = [
     icon: Shield,
     content: {
       title: "Every client, every session, every form — tracked",
-      description: "Full client profiles with contact info, tattoo history, session-by-session tracking, payment records, notes (consultation, design, medical, follow-up), consent form status, and tags (VIP, Regular, Walk-in). Digital consent forms screen 17 medical conditions with digital signature. No paper. No clipboards. Everything on file before they sit in the chair.",
+      description: "Full client profiles with contact info, tattoo history, session-by-session tracking, payment records, notes (consultation, design, medical, follow-up), consent form status, and tags (VIP, Regular, Walk-in). Digital consent forms screen 23 medical conditions with digital signature. No paper. No clipboards. Everything on file before they sit in the chair.",
       mockup: (
         <div className="space-y-2">
           <div className="flex items-center gap-2 bg-ink-800 rounded-lg p-2 border border-white/5">

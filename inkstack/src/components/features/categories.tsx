@@ -76,7 +76,7 @@ const categories = [
     title: "Consent & Compliance",
     description: "Digital forms that protect your studio and impress your clients.",
     features: [
-      { icon: Shield, name: "Digital Consent Forms", detail: "Full health questionnaire: 17 medical conditions, allergies, medications" },
+      { icon: Shield, name: "Digital Consent Forms", detail: "Full health questionnaire: 23 medical conditions, allergies, medications" },
       { icon: ClipboardCheck, name: "Emergency Contacts", detail: "Collected and stored securely with each consent form" },
       { icon: FileText, name: "Document Management", detail: "Digital signatures, form status tracking, and document storage" },
       { icon: Heart, name: "Aftercare System", detail: "Healing timeline from Day 1 through Weeks 4+ with instructions" },

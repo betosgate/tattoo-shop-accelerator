@@ -46,11 +46,12 @@ export function PricingPreview() {
 
             <div className="grid grid-cols-2 gap-x-4 gap-y-1.5 mb-6">
               {[
-                "Full studio website", "5 SEO satellite sites",
-                "200+ SEO articles", "Online booking system",
-                "Stripe payments", "3 admin dashboards",
-                "Tattoo CRM", "Digital consent forms",
-                "Referral program", "Portfolio gallery",
+                "AI Tattoo Design Studio", "Full studio website",
+                "5 SEO satellite sites", "200+ SEO articles",
+                "Online booking system", "Stripe payments",
+                "3 admin dashboards", "Tattoo CRM",
+                "Digital consent forms", "Referral program",
+                "Piercing module", "Portfolio gallery",
               ].map((f) => (
                 <div key={f} className="flex items-center gap-1.5 text-xs text-ink-300">
                   <Check className="h-3 w-3 text-electric shrink-0" />

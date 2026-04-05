@@ -40,14 +40,13 @@ export function CTASection() {
           </div>
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white">
-            Ready to Own Your Local{" "}
-            <span className="gradient-text">Search Results?</span>
+            Ready to Fill Your Chair{" "}
+            <span className="gradient-text">Every Single Day?</span>
           </h2>
 
           <p className="mt-6 text-lg text-ink-300 max-w-2xl mx-auto">
-            Stop losing clients to shops with better websites. Get a free demo
-            and see exactly how Tattoo Shop Accelerator will transform your studio&apos;s digital
-            presence.
+            Stop juggling DMs, chasing deposits, and losing clients to shops with better systems.
+            Get a free demo and see the complete platform that runs your studio for you.
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">

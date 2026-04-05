@@ -74,6 +74,7 @@ export function HeroSection() {
           className="mt-5 flex flex-wrap justify-center gap-2"
         >
           {[
+            "AI Design Studio",
             "Online Booking",
             "Stripe Payments",
             "Client CRM",

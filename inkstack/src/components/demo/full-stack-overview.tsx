@@ -15,7 +15,7 @@ const features = [
   { icon: Users, label: "Tattoo CRM", detail: "Client profiles, session tracking, payment history" },
   { icon: Search, label: "200+ SEO Articles", detail: "Long-form content targeting local search terms" },
   { icon: Handshake, label: "Referral Program", detail: "Partner codes, commissions, and payout tracking" },
-  { icon: Shield, label: "Consent Forms", detail: "Digital health questionnaire with 17 medical conditions" },
+  { icon: Shield, label: "Consent Forms", detail: "Digital health questionnaire with 23 medical conditions" },
   { icon: Image, label: "Portfolio Gallery", detail: "Lightbox with image and video support" },
   { icon: Smartphone, label: "Mobile-First", detail: "Every feature works perfectly on phones" },
   { icon: FileText, label: "Legal Pages", detail: "Privacy, terms, refund policy — all included" },

@@ -5,17 +5,23 @@ import { FadeUp } from "@/components/motion";
 import { Check, X, Minus } from "lucide-react";
 
 const comparisons = [
+  { feature: "AI Tattoo Design Studio", us: true, instagram: false, wordpress: false, generic: false },
   { feature: "Professional tattoo studio website", us: true, instagram: false, wordpress: "partial", generic: "partial" },
   { feature: "Online booking with deposits", us: true, instagram: false, wordpress: "partial", generic: true },
   { feature: "44 body areas with size pricing", us: true, instagram: false, wordpress: false, generic: false },
   { feature: "Stripe payment processing", us: true, instagram: false, wordpress: "partial", generic: true },
   { feature: "Digital consent forms", us: true, instagram: false, wordpress: false, generic: false },
   { feature: "Tattoo-specific CRM", us: true, instagram: false, wordpress: false, generic: false },
-  { feature: "Session tracking (linework → color)", us: true, instagram: false, wordpress: false, generic: false },
+  { feature: "Multi-session tracking (linework → color)", us: true, instagram: false, wordpress: false, generic: false },
+  { feature: "Custom booking links with expiration", us: true, instagram: false, wordpress: false, generic: false },
+  { feature: "Walk-in & phone booking workflow", us: true, instagram: false, wordpress: false, generic: false },
+  { feature: "Piercing module with jewelry inventory", us: true, instagram: false, wordpress: false, generic: false },
+  { feature: "Aftercare system with healing timeline", us: true, instagram: false, wordpress: false, generic: false },
   { feature: "5 SEO satellite websites", us: true, instagram: false, wordpress: false, generic: false },
   { feature: "200+ SEO articles written for you", us: true, instagram: false, wordpress: false, generic: false },
   { feature: "Referral partner program", us: true, instagram: false, wordpress: false, generic: false },
   { feature: "3 role-based dashboards", us: true, instagram: false, wordpress: false, generic: false },
+  { feature: "Staff training documentation (39 sections)", us: true, instagram: false, wordpress: false, generic: false },
   { feature: "Mobile-first, blazing fast", us: true, instagram: true, wordpress: "partial", generic: "partial" },
 ];
 

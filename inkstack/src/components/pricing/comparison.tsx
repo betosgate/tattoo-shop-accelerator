@@ -5,6 +5,7 @@ import { FadeUp } from "@/components/motion";
 import { Check, X } from "lucide-react";
 
 const comparisons = [
+  { feature: "AI Tattoo Design Studio", us: true, diy: false, agency: false, generic: false },
   { feature: "Professional tattoo studio website", us: true, diy: false, agency: true, generic: "partial" },
   { feature: "5 SEO satellite websites", us: true, diy: false, agency: false, generic: false },
   { feature: "200+ SEO articles written for you", us: true, diy: false, agency: false, generic: false },
@@ -13,8 +14,14 @@ const comparisons = [
   { feature: "Stripe payment processing", us: true, diy: false, agency: "partial", generic: true },
   { feature: "3 role-based dashboards", us: true, diy: false, agency: false, generic: false },
   { feature: "Tattoo-specific CRM & session tracking", us: true, diy: false, agency: false, generic: false },
-  { feature: "Digital consent forms (17 conditions)", us: true, diy: false, agency: false, generic: false },
+  { feature: "Multi-session tracking (linework → color)", us: true, diy: false, agency: false, generic: false },
+  { feature: "Custom booking links with expiration", us: true, diy: false, agency: false, generic: false },
+  { feature: "Walk-in & phone booking workflow", us: true, diy: false, agency: false, generic: false },
+  { feature: "Piercing module with jewelry inventory", us: true, diy: false, agency: false, generic: false },
+  { feature: "Digital consent forms (23 conditions)", us: true, diy: false, agency: false, generic: false },
+  { feature: "Aftercare system with healing timeline", us: true, diy: false, agency: false, generic: false },
   { feature: "Referral partner program", us: true, diy: false, agency: false, generic: false },
+  { feature: "Staff training documentation (39 sections)", us: true, diy: false, agency: false, generic: false },
   { feature: "Portfolio gallery with video", us: true, diy: "partial", agency: true, generic: "partial" },
   { feature: "Ongoing hosting & maintenance", us: true, diy: false, agency: "partial", generic: true },
   { feature: "Mobile-first, blazing fast", us: true, diy: false, agency: "partial", generic: "partial" },
