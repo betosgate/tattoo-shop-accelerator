@@ -425,13 +425,13 @@ export function SalesPlaybook() {
           <div className="bg-ink-800/40 rounded-lg p-3">
             <p className="text-xs font-semibold text-yellow-500 mb-2">If They Said &ldquo;I Need to Think About It&rdquo;</p>
             <ol className="text-sm text-ink-300 space-y-1.5 list-decimal pl-4">
-              <li><strong>Same day:</strong> Text &mdash; &ldquo;Great chatting today! Here&apos;s the demo link if you want to show your partner: tattooshopaccelerator.com/demo&rdquo;</li>
-              <li><strong>Day 2:</strong> Email &mdash; Send a brief recap of their specific pain points and how the platform solves each one</li>
-              <li><strong>Day 4:</strong> Text &mdash; &ldquo;Hey [Name], just checking in. Have you had a chance to think it over? Happy to hop on another quick call if any questions came up.&rdquo;</li>
-              <li><strong>Day 7:</strong> Email &mdash; &ldquo;Just wanted to let you know we&apos;re starting [X] new builds this month and spots are filling up. Would love to get [shop name] in the queue if you&apos;re ready.&rdquo;</li>
-              <li><strong>Day 14:</strong> Final text &mdash; &ldquo;No pressure at all, but I wanted to check in one last time. If the timing isn&apos;t right now, totally understand. We&apos;ll be here when you&apos;re ready.&rdquo;</li>
+              <li><strong>Same day:</strong> Record a 90-second Loom video: &ldquo;Hey [Name], great talking today. Here&apos;s the one thing I&apos;d think about...&rdquo; &mdash; recap their #1 pain point and how the platform solves it. Then text them the Loom link + the demo link: <code className="text-electric text-xs">tattooshopaccelerator.com/demo</code></li>
+              <li><strong>Day 2:</strong> Text &mdash; screenshot the feature that solves their biggest stated problem with caption: &ldquo;This is the part that would fix [specific thing they said].&rdquo;</li>
+              <li><strong>Day 5:</strong> Text &mdash; &ldquo;Hey [Name], had another shop in [nearby city] just sign on. Still have your [month] slot if you want it.&rdquo;</li>
+              <li><strong>Day 10:</strong> Final text &mdash; &ldquo;Hey [Name], closing out my [month] spots. No pressure either way &mdash; just didn&apos;t want you to miss out if you were still thinking about it.&rdquo;</li>
             </ol>
-            <Warning>Never follow up more than 5 times. Desperation kills deals. After Day 14, move them to a monthly newsletter if you have one.</Warning>
+            <Tip>Loom videos convert 3x better than email follow-ups. They&apos;re personal, they show you remember the conversation, and artists are visual people. Free at loom.com &mdash; just record your screen + face, 90 seconds max.</Tip>
+            <Warning>Never follow up more than 4 times. Never apologize for following up. After Day 10, let it go. Desperation kills deals.</Warning>
           </div>
         </div>
       </Card>
